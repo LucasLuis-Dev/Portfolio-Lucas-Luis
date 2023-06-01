@@ -1,0 +1,28 @@
+.navbar__container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.links-navbar__container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+
+  list-style: none;
+
+  padding: 25px;
+
+  color: #919191;
+
+  font-weight: 400;
+}
+
+.links-navbar__container > li {
+  cursor: pointer;
+}
+
+.links-navbar__container > li:hover {
+  color: white;
+}
