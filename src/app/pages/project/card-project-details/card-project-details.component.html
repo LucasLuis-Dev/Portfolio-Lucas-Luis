@@ -1,0 +1,30 @@
+<main>
+  <div class="card-project-details__conatiner">
+    <div class="card-project-description__container">
+      <div class="card-project-description-title__container">
+        <h1>{{projectTitle}}</h1>
+      </div>
+
+      <div class="card-project-description-description__container">
+        <p>{{ projectDescription }}</p>
+      </div>
+
+      <div class="card-project-description-links">
+        <a target="_blank" *ngIf="projectWebsite.length != 0" href="{{projectWebsite}}">
+          Website
+        </a>
+        <a target="_blank" href="{{projectGithub}}">
+          Repositório
+        </a>
+      </div>
+
+
+    </div>
+
+    <div class="card-project-photo__container">
+      <img src="{{photoProject}}" alt="">
+    </div>
+  </div>
+
+</main>
+

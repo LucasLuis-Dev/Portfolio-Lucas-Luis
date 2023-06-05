@@ -1,0 +1,64 @@
+.stacks__container {
+  display: flex;
+  width: 100%;
+  height: 25vh;
+
+  padding-left: 10%;
+  padding-right: 10%;
+
+  margin-top: -50px;
+
+  justify-content: center;
+}
+
+.stacks-techs__container {
+  display: flex;
+  width: 100%;
+  list-style: none;
+
+  justify-content: space-between;
+}
+
+.stacks-techs__container > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+
+}
+
+.stacks-techs__container > li > svg {
+  width: 7rem;
+  fill: #919191;
+  transition: 250ms;
+
+}
+
+
+.stacks-techs__container > li > svg:hover {
+  fill: #007CED;
+}
+
+
+.stacks-techs__container > li > p {
+
+  opacity: 0;
+  margin-top: -1rem;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.603);
+
+  font-size: 1.2rem;
+
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+
+  transition: 200ms
+}
+
+
+.stacks-techs__container > li:hover > p{
+  opacity: 1;
+  transform: translateY(1rem);
+}
+

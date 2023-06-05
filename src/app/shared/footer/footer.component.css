@@ -1,0 +1,25 @@
+.footer__container {
+  width: 100%;
+  height: 10rem;
+
+  padding-left: 10%;
+  padding-right: 10%;
+
+  background-color: #007CED;
+}
+
+.footer__container > ul {
+  display: flex;
+  flex-direction: row;
+
+  height: 100%;
+
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  color: white;
+}

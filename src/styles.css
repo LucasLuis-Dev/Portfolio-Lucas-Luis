@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+:root {
+  font-size: 62.5%;
+}
+
 body {
   background-color: #222222;
   font-family: 'poppins', Arial;
