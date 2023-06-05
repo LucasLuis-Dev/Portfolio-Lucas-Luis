@@ -89,3 +89,89 @@
   border: 0.3rem solid #007CED;
 
 }
+
+@media screen and (max-width:42rem) {
+  .profile__container {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 110vh;
+
+    justify-content: center;
+    align-items: center;
+    gap: 2.0rem;
+  }
+
+  .photo-profile__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26rem;
+    height: 26rem;
+    border-radius: 50%;
+    background-color: #444444;
+
+    border: 1px solid #000000;
+    box-shadow: 0rem 0rem 5.0rem rgba(0, 0, 0, 0.8);
+  }
+
+  .photo-profile__container > img {
+    width: 24rem;
+    height: fit-content;
+    border-radius: 50%;
+
+  }
+
+
+  .about-me-profile__container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+  }
+
+  .about-me-profile__container > h3 {
+    color: #919191;
+    font-weight: 500;
+    font-size: 2.3rem;
+  }
+
+  .about-me-profile__container > h1 {
+    font-weight: 700;
+    font-size: 5.5rem;
+  }
+
+  .about-me-profile__container > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    color: #919191;
+    font-size: 1.4rem;
+  }
+
+  .about-me-profile-buttons__container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    height: 9rem;
+  }
+
+  .about-me-profile-buttons__container > a {
+
+    text-decoration: none;
+    color: white;
+    background: #333333;
+    border: 0.3rem solid #D5D5D5;
+    border-radius: 3.0rem;
+
+    font-size: 1.4rem;
+
+    transition: 200ms
+  }
+
+
+
+}
