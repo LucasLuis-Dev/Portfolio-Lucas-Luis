@@ -1,0 +1,15 @@
+.arrow-back__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  background-color: #007CED;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  cursor: pointer;
+}
+
+.arrow-back__container > figure > svg {
+  width: 1.3rem;;
+}

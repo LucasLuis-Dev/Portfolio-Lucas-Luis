@@ -16,6 +16,7 @@
   font-weight: 700;
   height: 5rem;
   font-size: 3rem;
+  text-align: center;
 
 }
 
@@ -64,7 +65,7 @@
 }
 
 .contact-links__container > ul > li > a > figure > svg {
-  width: 3.5rem;
+  width: 4.5rem;
 }
 
 .contact-links__container > ul > li > a >  p:last-child {

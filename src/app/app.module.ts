@@ -8,12 +8,13 @@ import { HomeModule } from './pages/home/home.module';
 import { ProjectModule } from './pages/project/project.module';
 import { MenuComponent } from './shared/menu/menu.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ArrowComponent } from './components/arrow/arrow.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
