@@ -11,3 +11,11 @@
   font-size: 5.5rem;
   color: white;
 }
+
+@media screen and (max-width: 32.5rem) {
+  .title-project__container > h2 {
+    font-weight: 700;
+    font-size: 4.5rem;
+    color: white;
+  }
+}
