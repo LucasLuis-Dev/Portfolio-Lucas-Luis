@@ -3,7 +3,8 @@ main {
   flex-direction: column;
   padding-left: 10%;
   padding-right: 10%;
-  height: 100vh;
+  padding-top: 9%;
+  padding-bottom: 9%;
   justify-content: center;
   align-items: start;
 
@@ -14,9 +15,11 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  height: 80%;
-
   padding: 3.2rem;
+
+  padding-top: 5%;
+  padding-bottom: 5%;
+
 
 
   align-items: center;
@@ -87,7 +90,9 @@ main {
     flex-direction: column;
     padding-left: 10%;
     padding-right: 10%;
-    height: 100vh;
+
+    min-height: 100vh;
+
     justify-content: center;
     align-items: start;
 
@@ -98,10 +103,6 @@ main {
     display: flex;
    flex-direction: column;
 
-    height: 80%;
-    width: 100%;
-
-    padding: 3.2rem;
 
 
     align-items: center;
