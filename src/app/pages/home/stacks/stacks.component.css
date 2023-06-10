@@ -30,7 +30,7 @@
 }
 
 .stacks-techs__container > li > svg {
-  width: 7rem;
+  width: 7.5rem;
   fill: #919191;
   transition: 250ms;
 
@@ -132,3 +132,53 @@
 
 }
 
+
+/* TABLET */
+
+@media screen and (min-width:43rem) and (max-width: 90rem) {
+  .stacks__container {
+    display: flex;
+    width: 100%;
+
+    padding-bottom: 12%;
+
+    margin-top: -4rem;
+    justify-content: center;
+  }
+
+  .stacks-techs__container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    list-style: none;
+
+    gap: 0.2rem;
+
+    justify-content: center;
+
+  }
+
+
+  .stacks-techs__container > li > svg {
+    width: 8rem;
+    fill: #919191;
+    transition: 250ms;
+
+  }
+
+  .stacks-techs__container > li > p {
+
+    opacity: 0;
+    margin-top: -1rem;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.603);
+
+    font-size: 1.5rem;
+
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+    transition: 200ms
+  }
+
+}

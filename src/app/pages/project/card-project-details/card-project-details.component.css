@@ -6,7 +6,7 @@ main {
   padding-top: 9%;
   padding-bottom: 9%;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
 
   gap: 2rem;
 }
@@ -19,8 +19,6 @@ main {
 
   padding-top: 5%;
   padding-bottom: 5%;
-
-
 
   align-items: center;
   justify-content: center;
@@ -83,6 +81,7 @@ main {
 
 }
 
+/* SMARTPHONES */
 
 @media screen and (max-width: 42rem) {
   main {
@@ -91,10 +90,11 @@ main {
     padding-left: 10%;
     padding-right: 10%;
 
+
     min-height: 100vh;
 
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
 
     gap: 2rem;
   }
@@ -102,8 +102,6 @@ main {
   .card-project-details__conatiner {
     display: flex;
    flex-direction: column;
-
-
 
     align-items: center;
     justify-content: center;
@@ -144,6 +142,7 @@ main {
 
   .card-project-description-links{
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
   }
 
@@ -166,5 +165,104 @@ main {
 
   }
 
+}
+
+/* TABLET */
+
+@media screen and (min-width:43rem) and (max-width: 90rem) {
+  main {
+    min-height: 100vh;
+  }
+
+  .card-project-details__conatiner {
+    display: flex;
+   flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .card-project-photo__container > img {
+    width: 100%;
+  }
+
+  .card-project-description__container {
+    gap: 1.5rem;
+  }
+
+  .card-project-description-title__container > h1 {
+    font-size: 3.5rem;
+  }
+
+  .card-project-description-description__container > p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+
+  .card-project-description-links > a {
+    padding: 0.8rem 2.5rem;
+
+    font-size: 2rem;
+  }
+}
+
+
+/* NOTEBOOKS */
+
+@media screen and (min-width:91rem) and (max-width: 110rem) {
+  main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 12vh;
+    padding-bottom: 20vh;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 2rem;
+  }
+
+
+
+  .card-project-photo__container > img {
+    width: 70rem;
+    border-radius: 1.5rem;
+  }
+
+  .card-project-description__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .card-project-description-title__container > h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 4.5rem;
+  }
+
+  .card-project-description-description__container > p {
+    color: #919191;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+
+  .card-project-description-links > a {
+    padding: 1.2rem 4.0rem;
+    text-decoration: none;
+    color: white;
+    background: #333333;
+    border: 0.3rem solid #D5D5D5;
+    border-radius: 3.0rem;
+
+    font-size: 1.7rem;
+
+    transition: 200ms
+  }
 
 }
