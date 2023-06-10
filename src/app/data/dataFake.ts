@@ -3,7 +3,7 @@ export const dataFake = [
     "id" : "1",
     "photo": "https://cdn.discordapp.com/attachments/965066624556232737/1089007624953008169/Captura_de_tela_de_2023-03-24_23-07-09.png",
     "title": "Dev Community",
-    "description": "O projeto é uma aplicação web para uma comunidade de desenvolvedores, onde os usuários podem criar uma conta, fazer publicações, editar essas publicações e interagir por meio de comentários.",
+    "description": "Desenvolvi o Dev Community, uma aplicação web que proporciona interação e colaboração entre desenvolvedores. Utilizei o framework Flask para criar a aplicação do zero, implementando recursos como autenticação de usuários e integração com banco de dados. ",
     "techs": ['python','flask', 'tailwindcss', 'sqlalchemy'],
     "website": "",
     "github": "https://github.com/LucasLuis-Dev/Dev-Community"
