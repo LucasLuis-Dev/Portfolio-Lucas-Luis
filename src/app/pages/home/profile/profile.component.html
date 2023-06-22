@@ -1,29 +1,38 @@
 <div class="profile__container">
 
-  <figure class="photo-profile__container">
-    <img src="https://cdn.discordapp.com/attachments/965066624556232737/1113878594561781770/profile-pic_28.png" alt="">
-  </figure>
+  <div class="profile-informations__container">
 
-  <div class="about-me-profile__container">
-
-    <h3>Web Developer</h3>
-
-    <h1>
-      Lucas Luis
-    </h1>
-
-    <ul>
-      <li>💻 Desenvolvo Aplicações Web</li>
-      <li>🎓 Graduando em Sistemas de Informação UFPE</li>
-      <li>💡 Interesse em Desenvolvimento Web</li>
-      <li>🚀 Buscando novas Oportunidades de Estágio</li>
-    </ul>
-
-    <div class="about-me-profile-buttons__container">
-      <a href="../../../../assets/Currículo Lucas Luis de Souza.pdf" download>Currículo PDF</a>
-
+    <figure class="photo-profile__container">
+      <img src="https://cdn.discordapp.com/attachments/965066624556232737/1113878594297528482/profile-pic_24.png" alt="">
+    </figure>
+  
+    <div class="about-me-profile__container">
+  
+      <h3>Web Developer</h3>
+  
+      <h1>
+        Lucas Luis
+      </h1>
+  
+      <ul>
+        <li>💻 Desenvolvo Aplicações Web</li>
+        <li>🎓 Graduando em Sistemas de Informação UFPE</li>
+        <li>💡 Interesse em Desenvolvimento Web</li>
+        <li>🚀 Buscando novas Oportunidades de Estágio</li>
+      </ul>
+  
+      <div class="about-me-profile-buttons__container">
+          <app-button [isDownload]="true" link="/assets/Currículo Lucas Luis de Souza.pdf" content="Currículo PDF"></app-button>
+      </div>
+  
     </div>
-
+  
   </div>
+
+  
+  <div class="stacks__container">
+    <app-stacks></app-stacks>
+  </div>
+
 
 </div>

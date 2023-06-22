@@ -1,4 +1,10 @@
+<div class="title__container">
+  <app-title title="Projetos"></app-title>
+</div>
+
 <div class="card__container">
+ 
+ 
   <div class="card-project__container" *ngFor="let project of projects">
 
     <a [routerLink]="['/project', project.id]">

@@ -8,30 +8,32 @@ import { RouterModule } from '@angular/router';
 
 import { ProfileComponent } from './profile/profile.component';
 import { StacksComponent } from './stacks/stacks.component';
-import { TitleProjectComponent } from './title-project/title-project.component';
+import { TitleComponent } from 'src/app/components/title/title.component';
 import { CardProjectComponent } from './card-project/card-project.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { SharedModule } from '../shared.module';
 
 
 @NgModule({
   declarations: [
     ProfileComponent,
     StacksComponent,
-    TitleProjectComponent,
     CardProjectComponent,
-    ContactComponent
+    ContactComponent,
+    TitleComponent,
+  
   ],
   exports: [
     ProfileComponent,
     StacksComponent,
-    TitleProjectComponent,
     CardProjectComponent,
-    ContactComponent
+    ContactComponent,
+    
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ]
 })
 export class HomeModule { }

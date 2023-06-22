@@ -9,19 +9,20 @@ import { ProjectModule } from './pages/project/project.module';
 import { MenuComponent } from './shared/menu/menu.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ArrowComponent } from './components/arrow/arrow.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     FooterComponent,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HomeModule,
     ProjectModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent]

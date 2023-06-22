@@ -1,0 +1,9 @@
+<div class="button__container">
+    <a *ngIf=isDownload href="{{ link }}" download>
+        {{ content }}
+    </a>
+
+    <a  *ngIf="!isDownload && newTab" target="_blank" href="{{link}}">
+        {{ content }}
+    </a>
+</div>

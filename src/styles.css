@@ -8,6 +8,10 @@
 
 :root {
   font-size: 62.5%;
+  --cor_background: #333333;
+  --cor_texto_principal: white;
+  --cor_texto_secundario: #919191;
+  --cor_destaque: #007CED;
 }
 
 body {

@@ -1,44 +1,40 @@
 .stacks__container {
   display: flex;
-  width: 100%;
 
-  padding-bottom: 5%;
+  width: 100%;
 
   padding-left: 10%;
   padding-right: 10%;
 
-  margin-top: -50px;
-
   justify-content: center;
+  margin-bottom: 3rem;
 }
 
 .stacks-techs__container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   width: 100%;
   list-style: none;
 
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .stacks-techs__container > li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-
-
+ 
 }
 
 .stacks-techs__container > li > svg {
-  width: 7.5rem;
-  fill: #919191;
+  width: 5rem;
+  fill: var(--cor_texto_secundario);
   transition: 250ms;
-
 }
 
-
 .stacks-techs__container > li > svg:hover {
-  fill: #007CED;
+  fill: var(--cor_destaque);
 }
 
 
@@ -46,10 +42,10 @@
 
   opacity: 0;
   margin-top: -1rem;
-  color: white;
+  color: var(--cor_texto_principal);
   background-color: rgba(128, 128, 128, 0.603);
 
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -64,121 +60,156 @@
 }
 
 
-@media screen and (max-width:42rem) {
+@media screen and (min-width: 768px) {
   .stacks__container {
     display: flex;
+  
     width: 100%;
-
-    padding-bottom: 12%;
-
-    margin-top: -4rem;
+  
+    padding-left: 10%;
+    padding-right: 10%;
+  
     justify-content: center;
+    margin-bottom: 3rem;
   }
-
+  
   .stacks-techs__container {
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
+
+    width: 100%;
     list-style: none;
 
-    gap: 0.2rem;
-
-    justify-content: space-evenly;
-
+    gap: 1rem;
+  
+    justify-content: center;
+    align-items: center;
   }
-
+  
   .stacks-techs__container > li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-
-
+   
   }
-
+  
   .stacks-techs__container > li > svg {
-    width: 5rem;
-    fill: #919191;
+    width: 6rem;
+    fill: var(--cor_texto_secundario);
     transition: 250ms;
-
   }
-
-
+  
   .stacks-techs__container > li > svg:hover {
-    fill: #007CED;
+    fill: var(--cor_destaque);
   }
-
-
+  
+  
   .stacks-techs__container > li > p {
-
+  
     opacity: 0;
     margin-top: -1rem;
-    color: white;
+    color: var(--cor_texto_principal);
     background-color: rgba(128, 128, 128, 0.603);
-
-    font-size: 1.2rem;
-
+  
+    font-size: 1.1rem;
+  
     padding: 0.5rem;
     border-radius: 0.5rem;
-
+  
     transition: 200ms
   }
-
-
+  
+  
   .stacks-techs__container > li:hover > p{
     opacity: 1;
     transform: translateY(1rem);
   }
-
+  
 }
 
 
-/* TABLET */
-
-@media screen and (min-width:43rem) and (max-width: 90rem) {
+@media screen and (min-width:1024px) {
   .stacks__container {
     display: flex;
+  
     width: 100%;
-
-    padding-bottom: 12%;
-
-    margin-top: -4rem;
+    padding-left: 0;
+    padding-right: 0;
+  
     justify-content: center;
+    
   }
-
+  
   .stacks-techs__container {
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
+
+    width: 100%;
     list-style: none;
 
-    gap: 0.2rem;
-
+    gap: 2rem;
+  
     justify-content: center;
-
+    align-items: center;
   }
 
-
+  
   .stacks-techs__container > li > svg {
-    width: 8rem;
-    fill: #919191;
+    width: 6.6rem;
+    fill: var(--cor_texto_secundario);
     transition: 250ms;
-
   }
-
+  
+  .stacks-techs__container > li > svg:hover {
+    fill: var(--cor_destaque);
+  }
+  
+  
   .stacks-techs__container > li > p {
-
+  
     opacity: 0;
-    margin-top: -1rem;
-    color: white;
+    margin-top: -0.5rem;
+    color: var(--cor_texto_principal);
     background-color: rgba(128, 128, 128, 0.603);
-
-    font-size: 1.5rem;
-
+  
+    font-size: 1.3rem;
+  
     padding: 0.5rem;
     border-radius: 0.5rem;
-
+  
     transition: 200ms
   }
+  
+  
+  .stacks-techs__container > li:hover > p{
+    opacity: 1;
+    transform: translateY(1.2rem);
+  }
+  
+} 
 
-}
+
+
+@media screen and (min-width:1500px) {
+
+  
+  .stacks-techs__container {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    list-style: none;
+
+    gap: 6rem;
+  
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .stacks-techs__container > li > svg {
+    width: 7.5rem;
+    fill: var(--cor_texto_secundario);
+    transition: 250ms;
+  }
+} 

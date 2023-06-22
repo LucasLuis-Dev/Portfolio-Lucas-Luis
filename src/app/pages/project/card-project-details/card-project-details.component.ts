@@ -15,6 +15,9 @@ export class CardProjectDetailsComponent implements OnInit {
   projectWebsite: string = '';
   projectGithub: string = '';
 
+  techList: string[] = [];
+  
+
 
   private id:string | null = "0";
 
@@ -27,6 +30,8 @@ export class CardProjectDetailsComponent implements OnInit {
       this.id = (value['get']("id"))
       )
     console.log(this.id);
+    
+ 
     this.setValuesToComponent(this.id);
   }
 
@@ -38,7 +43,9 @@ export class CardProjectDetailsComponent implements OnInit {
     this.projectDescription = result.description
     this.projectWebsite = result.website
     this.projectGithub = result.github
+    this.techList = result.techs
 
+    console.log(this.techList)
 
   }
 }

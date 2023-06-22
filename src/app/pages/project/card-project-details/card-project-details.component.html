@@ -1,5 +1,8 @@
 <main>
-  <app-arrow></app-arrow>
+  <div class="arrow__container">
+    <app-arrow></app-arrow>
+  </div>
+  
   <div class="card-project-details__conatiner">
 
     <div class="card-project-description__container">
@@ -11,13 +14,21 @@
         <p>{{ projectDescription }}</p>
       </div>
 
+      <div class="card-project-techs__container">
+        <ul>
+          <li *ngFor="let tech of techList">
+           
+              <img  *ngIf="tech == 'tailwindcss' || tech == 'angularjs' || tech == 'django'"   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{{ tech }}/{{ tech }}-plain.svg" alt="">
+              <img *ngIf="tech != 'tailwindcss' && tech != 'angularjs' && tech != 'django'" [class.removeTech]="tech == 'tailwindcss' || tech == 'angularjs' || tech == 'django'" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{{ tech }}/{{ tech }}-original.svg" alt="">
+          </li>
+        </ul>
+      </div>
+
       <div class="card-project-description-links">
-        <a target="_blank" *ngIf="projectWebsite.length != 0" href="{{projectWebsite}}">
-          Website
-        </a>
-        <a target="_blank" href="{{projectGithub}}">
-          Repositório
-        </a>
+        <app-button [newTab]="true" *ngIf="projectWebsite.length != 0" link="{{projectWebsite}}"  content="Website"></app-button>
+       
+        <app-button [newTab]="true" link="{{projectGithub}}" content="Repositório"></app-button>
+       
       </div>
 
 
@@ -27,6 +38,5 @@
       <img src="{{photoProject}}" alt="">
     </div>
   </div>
-
 </main>
 
