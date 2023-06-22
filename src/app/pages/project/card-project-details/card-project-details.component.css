@@ -4,7 +4,6 @@ main {
 
   padding: 5%;
 
-
   min-height: 100vh;
   max-width: 100vw;
   
@@ -137,8 +136,7 @@ main {
     display: flex;
     flex-direction: column;
   
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 0% 10%;
    
   
     width: 100%;
@@ -227,8 +225,7 @@ main {
     display: flex;
     flex-direction: column;
   
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 0% 10%;
    
   
     width: 100%;
