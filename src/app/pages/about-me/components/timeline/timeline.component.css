@@ -1,0 +1,138 @@
+.timeline__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  max-width: 100%;
+}
+
+.container {
+  padding: 0rem 5rem;
+  position: relative;
+  width: 100%;
+}
+
+
+.container::before {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  left: -1rem;
+  top: 0;
+  background-color: var(--highlight-color);
+  z-index: 11;
+}
+
+
+.text-box {
+  padding: 2rem 3rem;
+  background-color: #d5d5d5;
+  position: relative;
+  border-radius: 0.6rem;
+  font-size: 1.5rem;
+  color: var(--main-text-color);
+}
+
+.text-box > small {
+  font-size: 1.4rem;
+}
+
+.text-box > p {
+  line-height: 3rem;
+}
+
+.container > img {
+  position: absolute;
+  width: 4rem;
+  border-radius: 50%;
+  right: -2rem;
+  top: 3.2rem;
+  z-index: 10;
+}
+
+.timeline__container::after {
+  content: '';
+  position: absolute;
+  width: 0.6rem;
+  height: 100%;
+  background-color: var(--highlight-color);
+  top: 0;
+  left: 0;
+  margin-left: -0.3rem;
+  z-index: 1;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .timeline__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    max-width: 100%;
+  }
+
+  .container {
+    padding: 0rem 5rem;
+    position: relative;
+    width: 100%;
+  }
+
+
+  .container::before {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    left: -1rem;
+    top: 0;
+    background-color: var(--highlight-color);
+    z-index: 11;
+  }
+
+
+  .text-box {
+    padding: 2rem 3rem;
+    background-color: #d5d5d5;
+    position: relative;
+    border-radius: 0.6rem;
+    font-size: 1.5rem;
+    color: var(--main-text-color);
+  }
+
+  .text-box > small {
+    font-size: 1.4rem;
+  }
+
+  .text-box > p {
+    line-height: 3rem;
+  }
+
+  .container > img {
+    position: absolute;
+    width: 4rem;
+    border-radius: 50%;
+    right: -2rem;
+    top: 3.2rem;
+    z-index: 10;
+  }
+
+  .timeline__container::after {
+    content: '';
+    position: absolute;
+    width: 0.6rem;
+    height: 100%;
+    background-color: var(--highlight-color);
+    top: 0;
+    left: 0;
+    margin-left: -0.3rem;
+    z-index: 1;
+  }
+
+
+}

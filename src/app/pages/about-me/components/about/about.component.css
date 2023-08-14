@@ -1,0 +1,13 @@
+.about__container {
+  font-size: 1.5rem;
+  color: var(--secondary-text-color);
+  line-height: 3.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .about__container {
+    font-size: 1.7rem;
+    color: var(--secondary-text-color);
+    line-height: 3.5rem;
+  }
+}

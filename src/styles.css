@@ -1,21 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
-
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
 }
 
 :root {
   font-size: 62.5%;
-  --cor_background: #333333;
-  --cor_texto_principal: white;
-  --cor_texto_secundario: #919191;
-  --cor_destaque: #007CED;
+  --background-color: white;
+  --main-text-color: rgb(48, 47, 47);
+  --secondary-text-color: #727070;
+  --highlight-color: #007CED;
 }
 
 body {
-  background-color: #222222;
-  font-family: 'poppins', Arial;
-}
 
+  font-family: poppins;
+}

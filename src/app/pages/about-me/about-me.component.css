@@ -1,0 +1,87 @@
+.about-me__container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.about-me-title__container > h1 {
+  font-size: 3.5rem;
+
+  padding: 3% 10%;
+  color: var(--main-text-color);
+
+}
+.about-me-informations__container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  gap: 5rem;
+  align-items: flex-start;
+  padding: 0% 10%;
+  padding-bottom: 2%;
+
+}
+
+.photo-profile__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33rem;
+  height: 33em;
+  border-radius: 50%;
+  background-color: #6bb2f5;
+
+
+  box-shadow: 0rem 0rem 5.0rem #6bb2f5;
+}
+
+.photo-profile__container > img {
+  width: 30rem;
+  height: fit-content;
+  border-radius: 50%;
+}
+
+
+
+@media screen and (min-width:1200px) {
+  .about-me__container {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .about-me-title__container {
+    font-size: 2.4rem;
+
+    padding: 3% 10%;
+    color: var(--main-text-color);
+
+  }
+  .about-me-informations__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+    align-items: flex-start;
+    padding: 0% 10%;
+    padding-bottom: 2%;
+
+  }
+
+  .photo-profile__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 140%;
+    height: 50%;
+    border-radius: 50%;
+
+
+  }
+
+  .photo-profile__container > img {
+    width: 55rem;
+    height: fit-content;
+    border-radius: 50%;
+  }
+}

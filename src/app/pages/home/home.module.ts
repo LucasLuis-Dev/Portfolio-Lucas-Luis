@@ -1,39 +1,45 @@
-import { NgModule, importProvidersFrom } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ProfileComponent } from './components/profile/profile.component';
+import { StacksComponent } from './components/stacks/stacks.component';
+import { ButtonComponent } from 'src/app/shared-components/button/button.component';
+import { CardProjectsComponent } from 'src/app/shared-components/card-projects/card-projects.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { TechnicalGraduationComponent } from './components/technical-graduation/technical-graduation.component';
+import { FooterComponent } from 'src/app/shared-components/footer/footer.component';
 
 
 import { RouterModule } from '@angular/router';
-
-
-
-import { ProfileComponent } from './profile/profile.component';
-import { StacksComponent } from './stacks/stacks.component';
-import { TitleComponent } from 'src/app/components/title/title.component';
-import { CardProjectComponent } from './card-project/card-project.component';
-import { ContactComponent } from './contact/contact.component';
-import { SharedModule } from '../shared.module';
-
+import { WhoAmIComponent } from './components/who-am-i/who-am-i.component';
 
 @NgModule({
   declarations: [
     ProfileComponent,
     StacksComponent,
-    CardProjectComponent,
+    ButtonComponent,
+    CardProjectsComponent,
+    SkillsComponent,
     ContactComponent,
-    TitleComponent,
-  
+    TechnicalGraduationComponent,
+    FooterComponent,
+    WhoAmIComponent
   ],
   exports: [
     ProfileComponent,
     StacksComponent,
-    CardProjectComponent,
+    ButtonComponent,
+    CardProjectsComponent,
+    SkillsComponent,
     ContactComponent,
-    
+    TechnicalGraduationComponent,
+    WhoAmIComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
-    RouterModule,
-    SharedModule
+    RouterModule
+    
   ]
 })
 export class HomeModule { }

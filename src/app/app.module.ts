@@ -3,28 +3,38 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { HomeComponent } from './pages/home/home.component';
 import { HomeModule } from './pages/home/home.module';
-import { ProjectModule } from './pages/project/project.module';
-import { MenuComponent } from './shared/menu/menu.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { ArrowComponent } from './components/arrow/arrow.component';
-import { ButtonComponent } from './components/button/button.component';
+import { NavbarComponent } from './shared-components/navbar/navbar.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { AboutMeComponent } from './pages/about-me/about-me.component';
+import { ProjectsModule } from './pages/projects/projects.module';
+import { AboutMeModule } from './pages/about-me/about-me.module';
+import { RouterModule } from '@angular/router';
+import { CertificationsModule } from "./pages/certifications/certifications.module";
+import { CertificationsComponent } from './pages/certifications/certifications.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MenuComponent,
-    FooterComponent,
-  
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HomeModule,
-    ProjectModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        NavbarComponent,
+        ProjectsComponent,
+        AboutMeComponent,
+        CertificationsComponent
+
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        HomeModule,
+        ProjectsModule,
+        AboutMeModule,
+        AppRoutingModule,
+        RouterModule,
+        CertificationsModule
+
+    ]
 })
 export class AppModule { }

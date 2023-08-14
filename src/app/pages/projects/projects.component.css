@@ -1,0 +1,15 @@
+.projects-title__container > h1 {
+  font-size: 3.5rem;
+  color: var(--main-text-color);
+  padding: 3% 10%;
+}
+
+
+
+@media screen and (min-width:1200px) {
+    .projects-title__container {
+        font-size: 2.8rem;
+        color: var(--main-text-color);
+        padding: 3% 10%;
+      }
+}

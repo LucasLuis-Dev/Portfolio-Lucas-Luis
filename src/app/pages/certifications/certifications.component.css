@@ -1,0 +1,23 @@
+.certifications__container {
+  display: flex;
+  flex-direction: column;
+}
+.certifications-title__container > h1 {
+  padding: 3% 10%;
+  padding-bottom: 10%;
+  font-size: 3.5rem;
+  color: var(--main-text-color);
+}
+
+
+@media screen and (min-width: 1200px) {
+    .certifications__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .certifications-title__container {
+        padding: 3% 10%;
+        font-size: 2.5rem;
+        color: var(--main-text-color);
+    }
+}
