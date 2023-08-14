@@ -224,7 +224,7 @@
 
   .down-arrow__container > svg {
     width: 2rem;
-    fill: #919191;
+    fill: var(--highlight-color);
     animation: top-down 2s linear infinite;
   }
 

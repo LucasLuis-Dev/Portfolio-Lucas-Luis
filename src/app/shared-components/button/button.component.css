@@ -50,14 +50,15 @@
   .button__container > a {
     padding: 1.3rem 4.0rem;
     text-decoration: none;
-    color: var(--main-text-color);
+    color: white;
 
     border: 0.3rem solid var(--highlight-color);
     border-radius: 3.0rem;
 
     font-size: 1.9rem;
 
-    transition: 200ms
+    transition: 200ms;
+  
   }
 
 
@@ -68,13 +69,13 @@
     border: 0.3rem solid var(--highlight-color);
     background-color: var(--highlight-color);
     color: white;
-    transform: scale(1.05);
+    transform: scale(1.1);
 
   }
 
   .button__container > a > svg {
     width: 3rem;
-    fill: black;
+    fill: white;
   }
 
   .button__container > a:hover > svg {

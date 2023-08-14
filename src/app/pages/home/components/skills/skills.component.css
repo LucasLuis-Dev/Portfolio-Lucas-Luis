@@ -129,6 +129,7 @@
 
   .skills-tech__container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 
     width: 100%;
@@ -209,8 +210,8 @@
 
     border: 0.3rem solid white;
     border-radius: 3.0rem;
-    background-color: var(--highlight-color);
-    color: white;
+    background-color: white;
+    color: var(--highlight-color);
 
     font-size: 1.8rem;
     font-weight: 700;
@@ -219,8 +220,6 @@
   }
 
   .see-my-projects__container > a:hover {
-    color: var(--highlight-color);
-    background: white;
     transform: scale(1.05);
   }
 

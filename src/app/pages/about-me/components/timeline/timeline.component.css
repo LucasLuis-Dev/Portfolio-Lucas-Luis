@@ -4,11 +4,11 @@
   align-items: center;
   gap: 2rem;
   position: relative;
-  max-width: 100%;
+  width: 100%;
 }
 
 .container {
-  padding: 0rem 5rem;
+  padding: 0rem 3rem;
   position: relative;
   width: 100%;
 }

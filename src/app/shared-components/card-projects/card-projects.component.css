@@ -7,8 +7,6 @@
   gap: 2rem;
 }
 
-
-
 .cards__container {
   display: flex;
   flex-direction: column;
@@ -101,18 +99,10 @@
 .card-project-links__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center ;
+  justify-content: center;
   gap: 0rem;
   margin-top: -3rem;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -149,6 +139,7 @@
 
     justify-content: space-between;
     border-radius: 1rem;
+    align-items: flex-start;
 
 
     gap: 2rem;
@@ -224,6 +215,8 @@
     display: flex;
     gap: 2rem;
     margin-top: -3rem;
+    justify-content: flex-start;
+
   }
 
 
