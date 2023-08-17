@@ -13,6 +13,7 @@ import { AboutMeModule } from './pages/about-me/about-me.module';
 import { RouterModule } from '@angular/router';
 import { CertificationsModule } from "./pages/certifications/certifications.module";
 import { CertificationsComponent } from './pages/certifications/certifications.component';
+import { ButtonToTopComponent } from './shared-components/button-to-top/button-to-top.component';
 
 @NgModule({
     declarations: [
@@ -21,7 +22,8 @@ import { CertificationsComponent } from './pages/certifications/certifications.c
         NavbarComponent,
         ProjectsComponent,
         AboutMeComponent,
-        CertificationsComponent
+        CertificationsComponent,
+        ButtonToTopComponent
 
     ],
     providers: [],

@@ -2,14 +2,33 @@
   font-size: 3.5rem;
   color: var(--main-text-color);
   padding: 3% 10%;
+  padding-top: 8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-title__container > h1 {
+    font-size: 3.5rem;
+    color: var(--main-text-color);
+    padding: 3% 10%;
+    padding-top: 10rem;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .projects-title__container > h1 {
+      font-size: 4.5rem;
+      color: var(--main-text-color);
+      padding: 3% 10%;
+      padding-top: 15rem;
+    }
 }
 
 
-
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1500px) {
     .projects-title__container > h1 {
         font-size: 5rem;
         color: var(--main-text-color);
         padding: 3% 10%;
+        padding-top: 15rem;
       }
 }

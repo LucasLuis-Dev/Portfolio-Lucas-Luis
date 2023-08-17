@@ -25,15 +25,48 @@
 
 }
 
+
 @media screen and (min-width: 1200px) {
   .who-am-i__container {
     display: flex;
     flex-direction: row;
     padding: 0% 10%;
-    padding-bottom: 5%;
+    padding-bottom: 1%;
     align-items: flex-start;
     justify-content: space-between;
     gap: 5rem;
+    padding-top: 2rem;
+  }
+
+  .who-am-i-title__container {
+    font-size: 2.7rem;
+    color: var(--main-text-color);
+    width: 40%;
+
+  }
+
+  .who-am-i-description__container {
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.5rem;
+    width: 30%;
+    color: var(--secondary-text-color);
+    line-height: 3.5rem;
+
+  }
+}
+
+
+@media screen and (min-width: 1500px) {
+  .who-am-i__container {
+    display: flex;
+    flex-direction: row;
+    padding: 0% 10%;
+    padding-bottom: 3%;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5rem;
+    padding-top: 2rem;
   }
 
   .who-am-i-title__container {

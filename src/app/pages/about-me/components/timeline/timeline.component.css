@@ -1,14 +1,18 @@
 .timeline__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: flex-end;
   gap: 2rem;
   position: relative;
   width: 100%;
 }
 
 .container {
-  padding: 0rem 3rem;
+  display: flex;
+
+  padding: 0rem 0rem;
+  padding-left: 2rem;
   position: relative;
   width: 100%;
 }
@@ -29,11 +33,11 @@
 
 .text-box {
   padding: 2rem 3rem;
-  background-color: #d5d5d5;
+  background-color: var(--highlight-color);
   position: relative;
   border-radius: 0.6rem;
   font-size: 1.5rem;
-  color: var(--main-text-color);
+  color: white;
 }
 
 .text-box > small {
@@ -98,11 +102,11 @@
 
   .text-box {
     padding: 2rem 3rem;
-    background-color: #d5d5d5;
+    background-color: var(--highlight-color);
     position: relative;
     border-radius: 0.6rem;
     font-size: 1.5rem;
-    color: var(--main-text-color);
+    color: white;
   }
 
   .text-box > small {

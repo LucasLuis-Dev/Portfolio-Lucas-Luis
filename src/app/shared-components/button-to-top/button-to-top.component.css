@@ -1,0 +1,58 @@
+.button-to-top__container {
+    position: fixed;
+    bottom: 35px;
+    right: 50px;
+    z-index: 13;
+    width: 2rem;
+    
+}
+
+.button-to-top__container > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--highlight-color);
+    border-radius: 50%;
+    border: none;
+    opacity: 0; 
+    transition: opacity 0.3s ;
+}
+
+.button-to-top__container > button > svg {
+    fill: white;
+    width: 2rem;
+}
+
+.button-to-top__container > button.show {
+    opacity: 1;
+}
+
+@media screen and (min-width: 1200px){
+
+    .button-to-top__container {
+        position: fixed;
+        bottom: 35px;
+        right: 80px;
+        z-index: 13;
+        width: 2rem;
+    }    
+    .button-to-top__container > button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        height: 5rem;
+        background-color: var(--highlight-color);
+        border-radius: 50%;
+        border: none;
+        opacity: 0; 
+        transition: opacity 0.3s ;
+    }
+    
+    .button-to-top__container > button > svg {
+        fill: white;
+        width: 3rem;
+    }
+}
