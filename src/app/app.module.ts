@@ -14,6 +14,8 @@ import { RouterModule } from '@angular/router';
 import { CertificationsModule } from "./pages/certifications/certifications.module";
 import { CertificationsComponent } from './pages/certifications/certifications.component';
 import { ButtonToTopComponent } from './shared-components/button-to-top/button-to-top.component';
+import { LoadingScreenComponent } from './shared-components/loading-screen/loading-screen.component';
+import { LoadingService } from './services/loading.service';
 
 @NgModule({
     declarations: [
@@ -23,10 +25,11 @@ import { ButtonToTopComponent } from './shared-components/button-to-top/button-t
         ProjectsComponent,
         AboutMeComponent,
         CertificationsComponent,
-        ButtonToTopComponent
+        ButtonToTopComponent,
+        LoadingScreenComponent
 
     ],
-    providers: [],
+    providers: [LoadingService],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,

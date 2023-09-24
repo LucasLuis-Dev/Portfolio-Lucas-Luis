@@ -19,6 +19,7 @@
   display: flex;
   align-items: flex-end;
   font-size: 1.5rem;
+  text-align: justify;
   width: 100%;
   color: var(--secondary-text-color);
   line-height: 3.5rem;
@@ -35,7 +36,7 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 5rem;
-    padding-top: 2rem;
+    padding-top: 3%;
   }
 
   .who-am-i-title__container {
@@ -49,6 +50,7 @@
     display: flex;
     align-items: flex-end;
     font-size: 1.5rem;
+    text-align: justify;
     width: 30%;
     color: var(--secondary-text-color);
     line-height: 3.5rem;
@@ -79,6 +81,7 @@
   .who-am-i-description__container {
     display: flex;
     align-items: flex-end;
+    text-align: justify;
     font-size: 1.6rem;
     width: 30%;
     color: var(--secondary-text-color);

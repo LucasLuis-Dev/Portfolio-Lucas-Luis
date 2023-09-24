@@ -116,7 +116,7 @@ color: var(--main-text-color);
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 5% 10%;
+    padding: 3% 10%;
     gap: 5rem;
   }
 
@@ -160,7 +160,7 @@ color: var(--main-text-color);
  }
 
  .link__container > a > h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--main-text-color);
  }
 
@@ -173,7 +173,7 @@ color: var(--main-text-color);
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 5% 10%;
+    padding: 3% 10%;
     gap: 5rem;
   }
 

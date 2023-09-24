@@ -76,5 +76,12 @@ export const certifications = [
     image: 'https://cdn.discordapp.com/attachments/1139378969150509117/1139598840459177994/POO_com_Java-1_page-0001.jpg',
     link: 'https://drive.google.com/file/d/1igl_K1dju_shOm0pKxrHwca9a5fKqDDE/view?usp=sharing',
     stack: 'Java'
+  },
+  {
+    id: 12,
+    name: 'Certificado Estrutura de Dados e Algoritmos em Python',
+    image: 'https://cdn.discordapp.com/attachments/965066624556232737/1155485177733185586/UC-ebbce6d7-9c6d-423e-97cd-d6630fdfe2c3.jpg',
+    link: 'https://drive.google.com/file/d/1bVOvU38Ncp3i-p9syACkx101Yz_uoc4M/view?usp=sharing',
+    stack: 'Python'
   }
 ]
