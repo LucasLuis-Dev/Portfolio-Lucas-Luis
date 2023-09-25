@@ -1,11 +1,11 @@
 export const dataFake = [
   {
     "id" : "1",
-    "photo": "https://cdn.discordapp.com/attachments/965066624556232737/1089007624953008169/Captura_de_tela_de_2023-03-24_23-07-09.png",
+    "photo": "https://cdn.discordapp.com/attachments/965066624556232737/1155840702329135114/image.png",
     "title": "Dev Community",
     "description": "Desenvolvi o Dev Community, uma aplicação web que proporciona interação e colaboração entre desenvolvedores. Utilizei o framework Flask para criar a aplicação do zero, implementando recursos como autenticação de usuários e integração com banco de dados. ",
     "techs": ['python','flask', 'tailwindcss', 'sqlalchemy', 'git'],
-    "website": "",
+    "website": "https://dev-community-6k7n.onrender.com/",
     "github": "https://github.com/LucasLuis-Dev/Dev-Community"
   },
   {
@@ -16,16 +16,6 @@ export const dataFake = [
     "techs": ['python', 'django', 'tailwindcss', 'javascript','git'],
     "website": "",
     "github": "https://github.com/LucasLuis-Dev/Screenflix"
-  },
-  {
-    "id": "3",
-    "photo": "https://cdn.discordapp.com/attachments/965066624556232737/1109846711553241128/Captura_de_tela_de_2023-05-21_11-13-45.png",
-    "title": "Angular Blog",
-    "description": "O Angular Blog é uma aplicação web desenvolvida com Angular e consiste em um blog de notícias dedicado ao mundo da tecnologia.",
-    "techs": ['angularjs', 'typescript', 'javascript', 'git'],
-    "website": "https://angular-blog-steel.vercel.app/",
-    "github": "https://github.com/LucasLuis-Dev/Angular-Blog"
-
   },
   {
     "id": "4",
@@ -44,5 +34,14 @@ export const dataFake = [
     "techs": ['python', 'git', 'vscode'],
     "website": "",
     "github": "https://github.com/LucasLuis-Dev/Projeto-P1-Space-Attack"
+  },
+  {
+    "id": "6",
+    "photo": "https://cdn.discordapp.com/attachments/965066624556232737/983442947326509098/Captura_de_tela_de_2022-06-06_15-50-28.png",
+    "title": "Projeto Automação Web",
+    "description": "O projeto consiste em um código que é capaz de navegar na web e coletar o preço e o link de compra dos produtos determinados na base de dados podendo ter um número indeterminado de produtos.",
+    "techs": ['python', 'git','selenium', 'pandas'],
+    "website": "",
+    "github": "https://github.com/LucasLuis-Dev/Projeto-Automacao-Web"
   }
 ]
