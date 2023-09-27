@@ -18,11 +18,10 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    // Simule algum processo assíncrono que você deseja que a tela de carregamento aguarde
+    
     setTimeout(() => {
-      // Após a conclusão do processo, esconda a tela de carregamento
       this.loadingService.showLoading = false;
-    }, 2000); // Aqui você pode ajustar o tempo de simulação
+    }, 2000);
   }
 
   

@@ -78,10 +78,17 @@ export const certifications = [
     stack: 'Java'
   },
   {
-    id: 12,
+    id: '12',
     name: 'Certificado Estrutura de Dados e Algoritmos em Python',
     image: 'https://cdn.discordapp.com/attachments/965066624556232737/1155485177733185586/UC-ebbce6d7-9c6d-423e-97cd-d6630fdfe2c3.jpg',
     link: 'https://drive.google.com/file/d/1bVOvU38Ncp3i-p9syACkx101Yz_uoc4M/view?usp=sharing',
     stack: 'Python'
+  },
+  {
+    id: '13',
+    name: 'Certificado Banco de Dados SQL e NOSQL',
+    image: "https://cdn.discordapp.com/attachments/965066624556232737/1156574792800014386/Certificado_Banco_de_Dados_SQL_e_NoSQL.jpg?ex=651577b6&is=65142636&hm=a1f9b8b3029d1698262be3c94f2317bfeee3b3e93c4a9e9fc41dbae8f793d311&",
+    link: "https://drive.google.com/file/d/1Td5wAUxHr-aQW-rHbunvGoe6izrsVfEU/view?usp=sharing",
+    stack: 'Banco de Dados'
   }
 ]
