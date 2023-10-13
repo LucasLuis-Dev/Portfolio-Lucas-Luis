@@ -23,7 +23,7 @@ export const dataFake = [
     "title": "Angular Blog",
     "description": "A aplicação Angular em desenvolvimento na Vercel é uma plataforma de busca de notícias de tecnologia, alimentada pela API do News API. Os usuários podem realizar pesquisas específicas e visualizar resultados de notícias de maneira intuitiva. ",
     "techs": ['git', 'angularjs','css3', 'typescript'],
-    "website": "https://blog-5eo0va4bv-lucasluis-dev.vercel.app/",
+    "website": "https://blog-five-coral-97.vercel.app/",
     "github": "https://github.com/LucasLuis-Dev/Blog"
   },
   {
