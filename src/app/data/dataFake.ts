@@ -18,7 +18,16 @@ export const dataFake = [
     "github": "https://github.com/LucasLuis-Dev/Screenflix"
   },
   {
-    "id": "4",
+    "id": "3",
+    "photo": "https://cdn.discordapp.com/attachments/965066624556232737/1162242957517266994/image.png?ex=653b3a1a&is=6528c51a&hm=0a110ee544f95d51d2b334222c05a88efb4459c68420161b7a4bf2b540431f10&",
+    "title": "Angular Blog",
+    "description": "A aplicação Angular em desenvolvimento na Vercel é uma plataforma de busca de notícias de tecnologia, alimentada pela API do News API. Os usuários podem realizar pesquisas específicas e visualizar resultados de notícias de maneira intuitiva. ",
+    "techs": ['git', 'angularjs','css3', 'typescript'],
+    "website": "https://blog-5eo0va4bv-lucasluis-dev.vercel.app/",
+    "github": "https://github.com/LucasLuis-Dev/Blog"
+  },
+  {
+    "id": "5",
     "photo": "https://cdn.discordapp.com/attachments/965066624556232737/1115030737805136043/Design_sem_nome.png",
     "title": "Algoritmo de Kruskal",
     "description": "Este projeto trata de um problema ilustrativo onde há preocupações de segurança da comunicação por e-mail em uma instituição, identificando conexões importantes e confiáveis entre os membros.",
@@ -27,7 +36,7 @@ export const dataFake = [
     "github": "https://github.com/LucasLuis-Dev/Algoritmo-de-Kruskal"
   },
   {
-    "id": "5",
+    "id": "6",
     "photo": "https://cdn.discordapp.com/attachments/965066624556232737/1041040696058060851/Space_Attack_3.png",
     "title": "Space Attack",
     "description": "Space Attack é um jogo interativo baseado em Star Wars, onde o jogador controla uma nave e enfrenta asteróides e naves inimigas.",
@@ -36,7 +45,7 @@ export const dataFake = [
     "github": "https://github.com/LucasLuis-Dev/Projeto-P1-Space-Attack"
   },
   {
-    "id": "6",
+    "id": "7",
     "photo": "https://cdn.discordapp.com/attachments/965066624556232737/983442947326509098/Captura_de_tela_de_2022-06-06_15-50-28.png",
     "title": "Projeto Automação Web",
     "description": "O projeto consiste em um código que é capaz de navegar na web e coletar o preço e o link de compra dos produtos determinados na base de dados podendo ter um número indeterminado de produtos.",
