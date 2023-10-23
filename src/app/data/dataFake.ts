@@ -20,7 +20,7 @@ export const dataFake = [
   {
     "id": "3",
     "photo": "https://cdn.discordapp.com/attachments/965066624556232737/1162242957517266994/image.png?ex=653b3a1a&is=6528c51a&hm=0a110ee544f95d51d2b334222c05a88efb4459c68420161b7a4bf2b540431f10&",
-    "title": "Angular Blog",
+    "title": "HotCoffee",
     "description": "A aplicação Angular em desenvolvimento na Vercel é uma plataforma de busca de notícias de tecnologia, alimentada pela API do News API. Os usuários podem realizar pesquisas específicas e visualizar resultados de notícias de maneira intuitiva. ",
     "techs": ['git', 'angularjs','css3', 'typescript'],
     "website": "https://blog-five-coral-97.vercel.app/",
