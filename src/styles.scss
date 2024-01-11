@@ -1,0 +1,29 @@
+@import "scss/base/base";
+@import "scss/abstracts/variables";
+@import "scss/abstracts/mixins";
+@import "scss/base/typografy";
+
+
+body {
+    background-color: darken($color-white, 10%);
+    overflow-x: hidden;
+    zoom: 80%;
+
+    &::-webkit-scrollbar {
+      width: 1rem;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;        
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $color-black;    
+      border-radius: 2rem;   
+      border: 0.1rem solid $color-white   
+    }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    zoom: 90%;
+  }
+}

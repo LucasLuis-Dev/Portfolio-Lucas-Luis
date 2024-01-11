@@ -1,24 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
-import { AboutMeComponent } from './pages/about-me/about-me.component';
+import { HomeComponent } from './pages/home/home.component';
 import { CertificationsComponent } from './pages/certifications/certifications.component';
+import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
-  {
-    path: '', component: HomeComponent, pathMatch: 'full'
-  },
-  {
-    path: 'projects', component: ProjectsComponent, pathMatch: 'full'
-  },
-  {
-    path: 'about-me', component: AboutMeComponent, pathMatch: 'full'
-  },
-  {
-    path: 'certifications', component: CertificationsComponent, pathMatch: 'full'
-  }
-
+  { path: '', component: HomeComponent, pathMatch: 'full' },
+  {path: 'about', component: AboutComponent, pathMatch: 'full'},
+  { path: 'projects', component:ProjectsComponent, pathMatch: 'full'},
+  { path: 'certifications', component: CertificationsComponent, pathMatch: 'full'}
 ];
 
 @NgModule({

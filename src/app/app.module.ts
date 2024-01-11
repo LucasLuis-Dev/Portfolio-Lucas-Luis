@@ -3,43 +3,36 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { ContactComponent } from './layout/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
-import { HomeModule } from './pages/home/home.module';
-import { NavbarComponent } from './shared-components/navbar/navbar.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
-import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { ProjectsModule } from './pages/projects/projects.module';
-import { AboutMeModule } from './pages/about-me/about-me.module';
-import { RouterModule } from '@angular/router';
-import { CertificationsModule } from "./pages/certifications/certifications.module";
 import { CertificationsComponent } from './pages/certifications/certifications.component';
-import { ButtonToTopComponent } from './shared-components/button-to-top/button-to-top.component';
-import { LoadingScreenComponent } from './shared-components/loading-screen/loading-screen.component';
-import { LoadingService } from './services/loading.service';
+import { AboutComponent } from './pages/about/about.component';
+import { HomeModule } from './pages/home/home.module';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        HomeComponent,
-        NavbarComponent,
-        ProjectsComponent,
-        AboutMeComponent,
-        CertificationsComponent,
-        ButtonToTopComponent,
-        LoadingScreenComponent
-
-    ],
-    providers: [LoadingService],
-    bootstrap: [AppComponent],
-    imports: [
-        BrowserModule,
-        HomeModule,
-        ProjectsModule,
-        AboutMeModule,
-        AppRoutingModule,
-        RouterModule,
-        CertificationsModule
-
-    ]
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    ContactComponent,
+    HomeComponent,
+    ProjectsComponent,
+    CertificationsComponent,
+    AboutComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ProjectsModule,
+    HomeModule,
+    ComponentsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

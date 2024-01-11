@@ -1,0 +1,125 @@
+@import "../../../scss/base/animations";
+@import "../../../scss/abstracts/variables";
+
+.navbar {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem $padding-sides;
+        animation: moveInUp 1s ease-out;
+    }
+
+    &-logo {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $color-black;
+    }
+
+    &-splash {
+        display: none;
+    }
+
+    &-list {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+
+        &-link a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 500;
+            cursor: pointer;
+            padding: 1rem;
+            border-radius: 5rem;
+            transition: 200ms;
+            color: $color-black;
+        }
+
+        &-link a:hover {
+            background-color: $color-black;
+            color: $color-white;
+        }
+    }
+
+    &-mobile-btn, &-dropdown-menu-open {
+        display: none;
+    }
+
+    @media screen and (max-width: 480px) {
+
+        &_container {
+            padding-top: 0.5rem;
+            position: relative;
+        }
+
+        &-logo {
+        padding-top: 1rem;
+        }
+
+        &-mobile-btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            position: absolute;
+            right: 10%;
+            width: 15rem;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            background-color: transparent;
+            background: black;
+            clip-path: circle(12% at 83.5% 12.5%);
+            transition: all .5s ease-in-out;
+
+            &.active {
+                clip-path: circle(75%);
+                background: black;
+            }
+
+            & svg {
+                width: 2rem;
+                fill: white;
+            }
+
+            &-dropdown-menu-open {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                list-style: none;
+                margin-top: 2rem;
+                gap: 1.5rem;
+                width: 100%;
+
+                &-link {
+                    display: flex;
+                    justify-content: center;
+                    gap: 1.5rem;
+
+                    & a {
+                        text-decoration: none;
+                        color: $color-white;
+                        font-weight: 500;
+                        & svg {
+                            width: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        
+
+        
+
+        
+        &-list {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: -35rem;
+            gap: 2rem;
+            list-style: none;
+        }
+    
+    }
+}

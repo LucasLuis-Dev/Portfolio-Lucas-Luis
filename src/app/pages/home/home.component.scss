@@ -1,0 +1,13 @@
+.home {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        &__container {
+            gap: 2rem;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+@import "../../../../../scss/base/animations";
+@import "../../../../../scss/abstracts/variables";
+@import "../../../../../scss/abstracts/mixins";
+
+
+.profile {
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+    &-photo {
+        width: fit-content;
+        text-align: center;
+        animation: moveInLeft 1.5s ease-in-out;
+
+        & img {
+            width: 85%;
+            border-radius: 50%;
+        }
+
+        @media screen and (min-width: 1000px) and (max-width: 1500px) {
+            & img {
+                width: 65%;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &-about {
+        display: flex;
+        flex-direction: column;
+        animation: moveInRight 1.5s ease-in-out;
+
+        &-subtitle {
+            @include title;
+            font-size: 2rem;
+            padding: 1rem;
+            background-color: $color-black;
+            color: $color-white;
+            width: fit-content;
+            border-radius: 5rem
+        }
+
+        &-title {
+            @include title;
+            font-size: 5.5rem;
+        }
+
+        &-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            &-item {
+                @include paragraph;
+                line-height: normal;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        &__container {
+            flex-direction: column;
+            padding: 2rem $padding-sides;
+            justify-content: center;
+        }
+    
+    
+        &-about {
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            
+            &-title {
+                font-size: 3.7rem;
+            }
+    
+            &-subtitle {
+                font-size: 1.7rem;
+            }
+    
+            &-list {
+                justify-content: center;
+                align-items: center;
+    
+                &-item {
+                    text-align: center;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+    
+   
+}

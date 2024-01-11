@@ -1,13 +1,9 @@
 <div class="projects__container">
-  <app-navbar></app-navbar>
-  <app-button-to-top></app-button-to-top>
-
-  <div class="projects-title__container">
-    <h1>Meus Projetos</h1>
-  </div>
-
-  <app-card-projects></app-card-projects>
-
-  <app-contact></app-contact>
-  <app-footer></app-footer>
+    <div class="projects-title">
+        <p>Explore os</p>
+        <h2>Meus Projetos</h2>
+    </div>
+    <div class="projects-cards" *ngFor="let project of projects;let i = index">
+        <app-card-project [titleProject]="project.title" [descriptionProject]="project.description" [ImagesProject]="project.photos" [OrderProject]="project.id" [ListTechsProject]="project.techs" [WebsiteProject]="project.website" [CodeProject]="project.github"></app-card-project>
+    </div>
 </div>

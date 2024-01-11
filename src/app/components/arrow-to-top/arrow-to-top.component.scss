@@ -1,0 +1,24 @@
+@import "../../../scss/abstracts/variables";
+@import "../../../scss/base/animations";
+
+.arrow-to-top {
+    &__container {
+        background-color: $color-black;
+        position: fixed;
+        right: 1%;
+        border-radius: 2rem;
+        padding: 1.5rem;
+        cursor: pointer;
+        
+        & svg {
+            width: 2rem;
+            fill: white;
+            margin-bottom: -1rem;
+        }
+    }
+
+    &__container.active {
+        animation: slide-up 0.5s ease;
+        bottom: 3rem;
+    }
+}

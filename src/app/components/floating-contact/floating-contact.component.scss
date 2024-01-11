@@ -1,0 +1,48 @@
+@import '../../../scss/abstracts/variables';
+@import '../../../scss/base/animations';
+
+.floating-contact {
+
+    &__container {
+        display: flex;
+        position: fixed;
+        right: 0;
+        top: 40%;
+        background-color: $color-black;
+        padding: 1rem;
+        border-radius: 1rem 0rem 0rem 1rem;
+        transition: 200ms;
+        animation: moveInRight 1.5s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        &__container {
+            display: none;
+        }
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        list-style: none;
+
+        &-link {
+            & a {
+                & svg {
+                    width: 3rem;
+                    fill: white;
+                    transition: 200ms;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+   
+}

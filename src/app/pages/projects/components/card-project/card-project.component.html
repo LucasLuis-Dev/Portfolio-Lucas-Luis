@@ -1,0 +1,23 @@
+<div class="card-project__container" id="card-{{OrderProject}}">
+    <figure class="card-project-image">
+        <img src="{{ photoProject }}" alt="" class="card-project-image-pic">
+    </figure>
+
+    <div class="card-project-informations">
+        <h3 class="card-project-informations-title">{{ titleProject }}</h3>
+        <p class="card-project-informations-subtitle">{{ descriptionProject }}</p>
+        <ul class="card-project-informations-techs">
+            <li *ngFor="let tech of ListTechsProject">
+                <img class="card-project-informations-techs-image"  *ngIf="tech == 'tailwindcss' || tech == 'angularjs' || tech == 'django'"   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{{ tech }}/{{ tech }}-plain.svg" alt="">
+                <img class="card-project-informations-techs-image" *ngIf="tech != 'tailwindcss' && tech != 'angularjs' && tech != 'django'" [class.removeTech]="tech == 'tailwindcss' || tech == 'angularjs' || tech == 'django'" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{{ tech }}/{{ tech }}-original.svg" alt="">
+            </li>
+        </ul>
+        
+        
+        <div class="card-project-informations-links">
+            <app-button content="Acessar site" *ngIf="WebsiteProject  !== ''"link="{{ WebsiteProject }} " [isDownload]="false" [newTab]=true></app-button>
+            <app-button content="Ver código fonte" link="{{ CodeProject }}" [isDownload]="false" [newTab]=true></app-button>
+            
+        </div>
+    </div>
+</div>

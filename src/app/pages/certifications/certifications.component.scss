@@ -1,0 +1,60 @@
+@import "../../../scss/base/animations";
+@import "../../../scss/abstracts/variables";
+@import "../../../scss/abstracts/mixins";
+
+.certifications {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 $padding-sides;
+        gap: 3rem;
+    }
+
+    &-title {
+        animation: moveInUp 1.5s ease-in-out;
+        & p {
+            @include paragraph;
+        }
+
+        & h2 {
+            @include title;
+        }
+    }
+
+    &-list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+
+        &-item {
+            width: 100%;
+            opacity: 0;
+           
+            &.animar {
+                animation: moveInUp 1s ease-in-out;
+                opacity: 1;
+            }
+
+            &-link {
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 2rem;
+                    transition: 200ms ease-in-out;
+                }
+
+                & img:hover {
+                    transform: translateY(-1rem);
+                    box-shadow: 0 0.5rem 1rem rgba($color-black, .2);
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        &-list {
+            grid-template-columns: 1fr;
+        }
+    }
+}

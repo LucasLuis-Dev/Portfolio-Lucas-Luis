@@ -1,0 +1,84 @@
+@import "../../../../../scss/base/animations";
+@import "../../../../../scss/abstracts/variables";
+@import "../../../../../scss/abstracts/mixins";
+
+
+.skills {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem $padding-sides;
+        gap: 3rem;
+        opacity: 0;
+
+        &.animar {
+            animation: moveInUp 1s ease-in-out;
+            opacity: 1;
+        }
+    }
+
+    &-title {
+        & p {
+            @include paragraph;        
+        }
+
+        & h2 {
+            @include title;
+        }
+    }
+
+    &-list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 8rem;
+        position: relative;
+
+       
+        &-item {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            padding: 4rem 0;
+            border-radius: 2rem;
+            background: $color-white;
+            transition: 200ms;
+
+            &:hover {
+                transform: translateY(-1rem);
+                box-shadow: 0 0.5rem 1rem rgba($color-black, .2);
+            }
+        
+            &:nth-child(1) {
+                background-color: #6CFF5A;
+            }
+
+            &:nth-child(2) {
+                background-color: #59B8FF;
+            }
+
+            &:nth-child(3) {
+                background-color: #FFF059;
+            }
+
+            &:nth-child(4) {
+                background-color: #FF9F5A;
+            }
+            
+            &-icon {
+                width: 7rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        &-list {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+    }
+
+}
