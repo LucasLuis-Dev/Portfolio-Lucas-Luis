@@ -3,7 +3,7 @@ import { Component, HostListener } from '@angular/core';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  styleUrls: ['./about.component.scss', './aboutTimeline.component.scss']
 })
 export class AboutComponent {
   @HostListener('window:scroll', ['$event'])
