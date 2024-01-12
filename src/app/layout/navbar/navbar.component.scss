@@ -15,9 +15,6 @@
         color: $color-black;
     }
 
-    &-splash {
-        display: none;
-    }
 
     &-list {
         display: flex;
@@ -54,6 +51,10 @@
 
         &-logo {
         padding-top: 1rem;
+        }
+
+        &-list {
+            display: none;
         }
 
         &-mobile-btn {
@@ -107,19 +108,7 @@
             }
         }
 
-        
-
-        
-
-        
-        &-list {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            right: -35rem;
-            gap: 2rem;
-            list-style: none;
-        }
+    
     
     }
 }
