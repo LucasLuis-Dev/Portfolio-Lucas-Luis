@@ -9,11 +9,11 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 2rem 0;
+        padding: 2rem $padding-sides;
     }
 
     &-photo {
-        width: fit-content;
+        width: 40%;
         text-align: center;
         animation: moveInLeft 1.5s ease-in-out;
 
@@ -62,6 +62,18 @@
             flex-direction: column;
             padding: 2rem $padding-sides;
             justify-content: center;
+            gap: 1rem;
+        }
+
+        &-photo {
+            width: 100%;
+            text-align: center;
+            animation: moveInLeft 1.5s ease-in-out;
+    
+            & img {
+                width: 85%;
+                border-radius: 50%;
+            }
         }
     
     
