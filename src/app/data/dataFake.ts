@@ -1,7 +1,7 @@
 export const dataFake = [
   {
     "id" : "1",
-    "photos": ["../../../../../assets/images/dev-community-mobile.png","../../../../../assets/images/dev-community-notebook.png", "../../../../../assets/images/dev-community-netbook.png"],
+    "photos": ["../../../../../assets/images/dev-community-mobile.jpg","../../../../../assets/images/dev-community-notebook.jpg", "../../../../../assets/images/dev-community-netbook.jpg"],
     "title": "Dev Community",
     "description": "Desenvolvi o Dev Community, uma aplicação web que proporciona interação e colaboração entre desenvolvedores. Utilizei o framework Flask para criar a aplicação do zero, implementando recursos como autenticação de usuários e integração com banco de dados. ",
     "techs": ['python','flask', 'tailwindcss', 'sqlalchemy', 'git'],
@@ -21,7 +21,7 @@ export const dataFake = [
   */
   {
     "id": "2",
-    "photos": ["../../../../../assets/images/hotcoffee-mobile.png","../../../../../assets/images/hotcoffee-notebook.png", "../../../../../assets/images/hotcoffee-netbook.png"],
+    "photos": ["../../../../../assets/images/hotcoffee-mobile.jpg","../../../../../assets/images/hotcoffee-notebook.jpg", "../../../../../assets/images/hotcoffee-netbook.jpg"],
     "title": "HotCoffee",
     "description": "A aplicação Angular em desenvolvimento na Vercel é uma plataforma de busca de notícias de tecnologia, alimentada pela API do News API. Os usuários podem realizar pesquisas específicas e visualizar resultados de notícias de maneira intuitiva. ",
     "techs": ['git', 'angularjs','css3', 'typescript'],
@@ -30,7 +30,7 @@ export const dataFake = [
   },
   {
     "id": "3",
-    "photos": ["../../../../../assets/images/algoritmo-kruskal-mobile.png","../../../../../assets/images/algoritmo-kruskal-notebook.png", "../../../../../assets/images/algoritmo-kruskal-netbook.png"],
+    "photos": ["../../../../../assets/images/algoritmo-kruskal-mobile.jpg","../../../../../assets/images/algoritmo-kruskal-notebook.jpg", "../../../../../assets/images/algoritmo-kruskal-netbook.jpg"],
     "title": "Algoritmo de Kruskal",
     "description": "Este projeto trata de um problema ilustrativo onde há preocupações de segurança da comunicação por e-mail em uma instituição, identificando conexões importantes e confiáveis entre os membros.",
     "techs": ['python', 'vscode', 'git'],
@@ -39,7 +39,7 @@ export const dataFake = [
   },
   {
     "id": "4",
-    "photos": ["../../../../../assets/images/space-attack-mobile.png","../../../../../assets/images/space-attack-notebook.png","../../../../../assets/images/space-attack-netbook.png"],
+    "photos": ["../../../../../assets/images/space-attack-mobile.jpg","../../../../../assets/images/space-attack-notebook.jpg","../../../../../assets/images/space-attack-netbook.jpg"],
     "title": "Space Attack",
     "description": "Space Attack é um jogo interativo baseado em Star Wars, onde o jogador controla uma nave e enfrenta asteróides e naves inimigas.",
     "techs": ['python', 'git', 'vscode'],
@@ -48,7 +48,7 @@ export const dataFake = [
   },
   {
     "id": "5",
-    "photos": ["../../../../../assets/images/doctor-care-mobile.png","../../../../../assets/images/doctor-care-notebook.png", "../../../../../assets/images/doctor-care-netbook.png"],
+    "photos": ["../../../../../assets/images/doctor-care-mobile.jpg","../../../../../assets/images/doctor-care-notebook.jpg", "../../../../../assets/images/doctor-care-netbook.jpg"],
     "title": "Doctor Care",
     "description": "O projeto consiste em um código que é capaz de navegar na web e coletar o preço e o link de compra dos produtos determinados na base de dados podendo ter um número indeterminado de produtos.",
     "techs": ['javascript', 'git','html5', 'css'],

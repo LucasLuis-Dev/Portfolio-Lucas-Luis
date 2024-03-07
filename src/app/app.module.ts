@@ -9,10 +9,10 @@ import { ContactComponent } from './layout/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ProjectsModule } from './pages/projects/projects.module';
-import { CertificationsComponent } from './pages/certifications/certifications.component';
 import { AboutComponent } from './pages/about/about.component';
 import { HomeModule } from './pages/home/home.module';
 import { ComponentsModule } from './components/components.module';
+import { CertificationsModule } from './pages/certifications/certifications.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,6 @@ import { ComponentsModule } from './components/components.module';
     ContactComponent,
     HomeComponent,
     ProjectsComponent,
-    CertificationsComponent,
     AboutComponent,
   ],
   imports: [
@@ -30,6 +29,7 @@ import { ComponentsModule } from './components/components.module';
     AppRoutingModule,
     ProjectsModule,
     HomeModule,
+    CertificationsModule,
     ComponentsModule
   ],
   providers: [],
