@@ -8,6 +8,15 @@ export const dataFake = [
     "website": "https://dev-community-6k7n.onrender.com/",
     "github": "https://github.com/LucasLuis-Dev/Dev-Community"
   },
+  {
+    "id": "2",
+    "photos": ["../../../../../assets/images/level-up-mobile.jpg","../../../../../assets/images/level-up-notebook.jpg", "../../../../../assets/images/level-up-netbook.jpg"],
+    "title": "Level UP",
+    "description": "A Level UP é uma plataforma de jogos gratuitos que tem o intuito de oferecer aos usuários uma ampla gama de jogos gratuitos dos mais diversos tipos e estilos.",
+    "techs": ['angularjs', 'git','typescript', 'sass', 'nestjs', 'jest', 'swagger'],
+    "website": "level-up-0ycf.onrender.com",
+    "github": "https://github.com/LucasLuis-Dev/Level-UP"
+  },
   /*
   {
     "id": "2",
@@ -20,7 +29,7 @@ export const dataFake = [
   },
   */
   {
-    "id": "2",
+    "id": "3",
     "photos": ["../../../../../assets/images/hotcoffee-mobile.jpg","../../../../../assets/images/hotcoffee-notebook.jpg", "../../../../../assets/images/hotcoffee-netbook.jpg"],
     "title": "HotCoffee",
     "description": "A aplicação Angular em desenvolvimento na Vercel é uma plataforma de busca de notícias de tecnologia, alimentada pela API do News API. Os usuários podem realizar pesquisas específicas e visualizar resultados de notícias de maneira intuitiva. ",
@@ -29,7 +38,7 @@ export const dataFake = [
     "github": "https://github.com/LucasLuis-Dev/Blog"
   },
   {
-    "id": "3",
+    "id": "4",
     "photos": ["../../../../../assets/images/algoritmo-kruskal-mobile.jpg","../../../../../assets/images/algoritmo-kruskal-notebook.jpg", "../../../../../assets/images/algoritmo-kruskal-netbook.jpg"],
     "title": "Algoritmo de Kruskal",
     "description": "Este projeto trata de um problema ilustrativo onde há preocupações de segurança da comunicação por e-mail em uma instituição, identificando conexões importantes e confiáveis entre os membros.",
@@ -38,7 +47,7 @@ export const dataFake = [
     "github": "https://github.com/LucasLuis-Dev/Algoritmo-de-Kruskal"
   },
   {
-    "id": "4",
+    "id": "5",
     "photos": ["../../../../../assets/images/space-attack-mobile.jpg","../../../../../assets/images/space-attack-notebook.jpg","../../../../../assets/images/space-attack-netbook.jpg"],
     "title": "Space Attack",
     "description": "Space Attack é um jogo interativo baseado em Star Wars, onde o jogador controla uma nave e enfrenta asteróides e naves inimigas.",
@@ -47,14 +56,14 @@ export const dataFake = [
     "github": "https://github.com/LucasLuis-Dev/Projeto-P1-Space-Attack"
   },
   {
-    "id": "5",
+    "id": "6",
     "photos": ["../../../../../assets/images/doctor-care-mobile.jpg","../../../../../assets/images/doctor-care-notebook.jpg", "../../../../../assets/images/doctor-care-netbook.jpg"],
     "title": "Doctor Care",
-    "description": "O projeto consiste em um código que é capaz de navegar na web e coletar o preço e o link de compra dos produtos determinados na base de dados podendo ter um número indeterminado de produtos.",
+    "description": "Projeto de Website pensado para Clinicas de saúde feito em conjunto no evento NLW Return proporcionado pela Rocketseat.",
     "techs": ['javascript', 'git','html5', 'css'],
-    "website": "",
-    "github": "https://github.com/LucasLuis-Dev/Projeto-Automacao-Web"
-  },
+    "website": "https://lucasluis-dev.github.io/DoctorCare/",
+    "github": "https://github.com/LucasLuis-Dev/DoctorCare"
+  }
   /*
   {
     "id": "8",
