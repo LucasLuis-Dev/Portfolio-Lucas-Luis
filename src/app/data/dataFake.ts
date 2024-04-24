@@ -1,21 +1,22 @@
 export const dataFake = [
+  
   {
-    "id" : "1",
-    "photos": ["../../../../../assets/images/dev-community-mobile.jpg","../../../../../assets/images/dev-community-notebook.jpg", "../../../../../assets/images/dev-community-netbook.jpg"],
-    "title": "Dev Community",
-    "description": "Desenvolvi o Dev Community, uma aplicação web que proporciona interação e colaboração entre desenvolvedores. Utilizei o framework Flask para criar a aplicação do zero, implementando recursos como autenticação de usuários e integração com banco de dados. ",
-    "techs": ['python','flask', 'tailwindcss', 'sqlalchemy', 'git'],
-    "website": "https://dev-community-6k7n.onrender.com/",
-    "github": "https://github.com/LucasLuis-Dev/Dev-Community"
-  },
-  {
-    "id": "2",
+    "id": "1",
     "photos": ["../../../../../assets/images/level-up-mobile.jpg","../../../../../assets/images/level-up-notebook.jpg", "../../../../../assets/images/level-up-netbook.jpg"],
     "title": "Level UP",
     "description": "A Level UP é uma plataforma de jogos gratuitos que tem o intuito de oferecer aos usuários uma ampla gama de jogos gratuitos dos mais diversos tipos e estilos.",
     "techs": ['angularjs', 'git','typescript', 'sass', 'nestjs', 'jest', 'swagger'],
     "website": "level-up-0ycf.onrender.com",
     "github": "https://github.com/LucasLuis-Dev/Level-UP"
+  },
+  {
+    "id": "2",
+    "photos": ["../../../../../assets/images/gpt4enem-mobile.jpg","../../../../../assets/images/gpt4enem-notebook.jpg", "../../../../../assets/images/gpt4enem-netbook.jpg"],
+    "title": "GPT4ENEM",
+    "description": "O GPT4ENEM foi desenvolvido para oferecer aos estudantes do ensino médio uma ferramenta prática e eficaz para acessar conteúdos relacionados ao Exame Nacional do Ensino Médio (ENEM). Ele possibilita resumir vídeos, transcrever áudio e a verificação de cobertura de conteudo, tudo em uma plataforma única e gratuita.",
+    "techs": ['angularjs', 'git','typescript', 'sass', 'express', 'jest'],
+    "website": "https://gpt4enem.onrender.com",
+    "github": "https://github.com/EngSoftware23/GPT4ENEM"
   },
   /*
   {
@@ -38,7 +39,16 @@ export const dataFake = [
     "github": "https://github.com/LucasLuis-Dev/Blog"
   },
   {
-    "id": "4",
+    "id" : "4",
+    "photos": ["../../../../../assets/images/dev-community-mobile.jpg","../../../../../assets/images/dev-community-notebook.jpg", "../../../../../assets/images/dev-community-netbook.jpg"],
+    "title": "Dev Community",
+    "description": "Desenvolvi o Dev Community, uma aplicação web que proporciona interação e colaboração entre desenvolvedores. Utilizei o framework Flask para criar a aplicação do zero, implementando recursos como autenticação de usuários e integração com banco de dados. ",
+    "techs": ['python','flask', 'tailwindcss', 'sqlalchemy', 'git'],
+    "website": "https://dev-community-6k7n.onrender.com/",
+    "github": "https://github.com/LucasLuis-Dev/Dev-Community"
+  },
+  {
+    "id": "5",
     "photos": ["../../../../../assets/images/algoritmo-kruskal-mobile.jpg","../../../../../assets/images/algoritmo-kruskal-notebook.jpg", "../../../../../assets/images/algoritmo-kruskal-netbook.jpg"],
     "title": "Algoritmo de Kruskal",
     "description": "Este projeto trata de um problema ilustrativo onde há preocupações de segurança da comunicação por e-mail em uma instituição, identificando conexões importantes e confiáveis entre os membros.",
@@ -47,7 +57,7 @@ export const dataFake = [
     "github": "https://github.com/LucasLuis-Dev/Algoritmo-de-Kruskal"
   },
   {
-    "id": "5",
+    "id": "6",
     "photos": ["../../../../../assets/images/space-attack-mobile.jpg","../../../../../assets/images/space-attack-notebook.jpg","../../../../../assets/images/space-attack-netbook.jpg"],
     "title": "Space Attack",
     "description": "Space Attack é um jogo interativo baseado em Star Wars, onde o jogador controla uma nave e enfrenta asteróides e naves inimigas.",
@@ -56,7 +66,7 @@ export const dataFake = [
     "github": "https://github.com/LucasLuis-Dev/Projeto-P1-Space-Attack"
   },
   {
-    "id": "6",
+    "id": "7",
     "photos": ["../../../../../assets/images/doctor-care-mobile.jpg","../../../../../assets/images/doctor-care-notebook.jpg", "../../../../../assets/images/doctor-care-netbook.jpg"],
     "title": "Doctor Care",
     "description": "Projeto de Website pensado para Clinicas de saúde feito em conjunto no evento NLW Return proporcionado pela Rocketseat.",
