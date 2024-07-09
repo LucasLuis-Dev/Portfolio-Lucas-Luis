@@ -31,7 +31,7 @@
         list-style: none;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 8rem;
+        gap: 3rem;
         position: relative;
 
        
@@ -46,30 +46,54 @@
             border-radius: 2rem;
             background: $color-white;
             transition: 200ms;
+            color: rgb(45, 45, 45);
 
-            &:hover {
-                transform: translateY(-1rem);
-                box-shadow: 0 0.5rem 1rem rgba($color-black, .2);
-            }
         
             &:nth-child(1) {
                 background-color: #6CFF5A;
+
+                &:hover {
+                    transform: translateX(12px) translateY(-12px);
+                    box-shadow: rgba(108, 255, 90, 0.4) -5px 5px, rgba(108, 255, 90, 0.3) -10px 10px, rgba(108, 255, 90, 0.2) -15px 15px, rgba(108, 255, 90, 0.1) -20px 20px, rgba(108, 255, 90, 0.05) -25px 25px;
+                    
+                }
             }
 
             &:nth-child(2) {
                 background-color: #59B8FF;
+
+                &:hover {
+                    transform: translateX(12px) translateY(-12px);
+                    box-shadow: rgba(89, 184, 255, 0.4) -5px 5px, rgba(89, 184, 255, 0.3) -10px 10px, rgba(89, 184, 255, 0.2) -15px 15px, rgba(89, 184, 255, 0.1) -20px 20px, rgba(89, 184, 255, 0.05) -25px 25px;
+                    
+                }
+                
             }
 
             &:nth-child(3) {
                 background-color: #FFF059;
+
+                &:hover {
+                    transform: translateX(12px) translateY(-12px);
+                    box-shadow: rgba(255, 240, 89, 0.4) -5px 5px, rgba(255, 240, 89, 0.3) -10px 10px, rgba(255, 240, 89, 0.2) -15px 15px, rgba(255, 240, 89, 0.1) -20px 20px, rgba(255, 240, 89, 0.05) -25px 25px;
+                    
+                }
             }
 
             &:nth-child(4) {
                 background-color: #FF9F5A;
+
+                &:hover {
+                    transform: translateX(12px) translateY(-12px);
+                    box-shadow: rgba(255, 159, 90, 0.4) -5px 5px, rgba(255, 159, 90, 0.3) -10px 10px, rgba(255, 159, 90, 0.2) -15px 15px, rgba(255, 159, 90, 0.1) -20px 20px, rgba(255, 159, 90, 0.05) -25px 25px;
+                    
+                }
+
+                
             }
             
             &-icon {
-                width: 7rem;
+                width: 12rem;
             }
         }
     }
