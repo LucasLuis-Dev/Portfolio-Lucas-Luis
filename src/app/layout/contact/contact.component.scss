@@ -37,10 +37,9 @@
 
             &-input,
             &-textarea {
-                border-radius: 2rem;
+                border-radius: 20rem;
                 padding: 1.5rem;
                 font-size: 1.6rem;
-                border: none;
                 background: transparent;
                 border: 0.1rem solid $color-grey-dark;
             }
@@ -86,8 +85,7 @@
         }
 
         &-link {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
             justify-content: center;
             width: 20rem;
             padding: 1rem 7%;
@@ -98,6 +96,7 @@
 
             & a {
                 display: flex;
+                width: 12rem;
                 align-items: center;
                 gap: 1.5rem;
                 text-decoration: none;
@@ -156,7 +155,8 @@
                 width: 100%;
 
                 & a {
-                    font-size: 1.4rem;
+                    width: 12rem;
+                    font-size: 1.7rem;
                     font-weight: 600;
                 }
             }

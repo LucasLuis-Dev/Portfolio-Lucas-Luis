@@ -63,6 +63,12 @@
             font-size: 3rem;
         }
 
+        @media screen and (max-width: 480px) {
+            &-title {
+                text-align: center;
+            }
+        }
+
         &-subtitle {
             @include paragraph;
         }
