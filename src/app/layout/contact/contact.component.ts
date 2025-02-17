@@ -19,7 +19,9 @@ export class ContactComponent {
 
       if (elementPosition <= window.innerHeight) {
         element.classList.add('animar');
-      } 
+      } else {
+        element.classList.remove('animar');
+      }
 
       count++;
     });

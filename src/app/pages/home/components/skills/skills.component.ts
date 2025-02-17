@@ -19,7 +19,9 @@ export class SkillsComponent {
 
       if (elementPosition <= window.innerHeight) {
         element.classList.add('animar');
-      } 
+      } else {
+        element.classList.remove('animar');
+      }
 
       count++;
     });

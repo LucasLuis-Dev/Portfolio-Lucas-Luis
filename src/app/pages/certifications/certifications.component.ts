@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
 import { certifications } from 'src/app/data/certifications.';
 
 @Component({
@@ -6,8 +6,9 @@ import { certifications } from 'src/app/data/certifications.';
   templateUrl: './certifications.component.html',
   styleUrls: ['./certifications.component.scss']
 })
-export class CertificationsComponent implements OnInit {
+export class CertificationsComponent implements OnInit, AfterViewInit {
   certifications: any[] = certifications;
+  showCertifications: boolean = false;
   
 
   ngOnInit(): void {
@@ -15,6 +16,10 @@ export class CertificationsComponent implements OnInit {
       
       this.adicionarClasseSeVisivel();
     }, 0);
+  }
+
+  ngAfterViewInit(): void {
+    this.showCertifications = true;
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -30,6 +35,8 @@ export class CertificationsComponent implements OnInit {
 
       if (elementPosition <= window.innerHeight) {
         element.classList.add('animar');
+      } else {
+        element.classList.remove('animar');
       }
 
 

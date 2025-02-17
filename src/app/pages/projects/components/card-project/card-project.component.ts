@@ -90,7 +90,9 @@ export class CardProjectComponent implements OnInit {
 
       else if (elementPosition <= window.innerHeight && this.rotaAtual === "/projects" && count >= 2) {
         element.classList.add('animar');
-      }  
+      } else {
+        element.classList.remove('animar');
+      }
 
       count++;
     });

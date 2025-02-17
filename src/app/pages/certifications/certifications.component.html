@@ -1,14 +1,19 @@
 <div class="certifications__container">
-    <div class="certifications-title">
-        <p>Fique por dentro das minhas</p>
-        <h2>Certificações</h2>
-    </div>
 
-    <ul class="certifications-list">
-        <li class="certifications-list-item" *ngFor="let certification of certifications">
-            <a class="certifications-list-item-link" href="{{ certification.link }}" target="_blank">
-                <img src="{{ certification.image }}" alt="" >
-            </a>
-        </li>
-    </ul>
+    <span *ngIf="!showCertifications" class="loader"></span>
+
+    <ng-container *ngIf="showCertifications">
+        <div class="certifications-title">
+            <p>Fique por dentro das minhas</p>
+            <h2>Certificações</h2>
+        </div>
+    
+        <ul class="certifications-list">
+            <li class="certifications-list-item" *ngFor="let certification of certifications">
+                <a class="certifications-list-item-link" href="{{ certification.link }}" target="_blank">
+                    <img src="{{ certification.image }}" alt="" >
+                </a>
+            </li>
+        </ul>
+    </ng-container>
 </div>
