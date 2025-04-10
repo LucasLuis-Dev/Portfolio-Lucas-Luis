@@ -26,6 +26,16 @@ export const dataFake = [
     "website": "https://gpt4enem.onrender.com",
     "github": "https://github.com/EngSoftware23/GPT4ENEM"
   },
+  {
+    "id": "4",
+    "photos": ["../../../../../assets/images/topsis-mobile.jpg","../../../../../assets/images/topsis-notebook.jpg", "../../../../../assets/images/topsis-netbook.jpg"],
+    "title": "TOPSIS",
+    "description": "Essa é uma aplicação que oferece suporte inteligente à tomada de decisão por meio do algoritmo TOPSIS, disponível de forma intuitiva e acessível. Simplificando suas escolhas com precisão e confiabilidade, independentemente do contexto ou complexidade da análise.",
+    "techs": ['react', 'git','javascript', 'python'],
+    "website": "https://sad-topsis.onrender.com/",
+    "github": "https://github.com/TOPSIS-SAD-2024-2/TOPSIS-FRONTEND"
+  },
+
   /*
   {
     "id": "2",
@@ -38,15 +48,6 @@ export const dataFake = [
   },
   */
   {
-    "id": "4",
-    "photos": ["../../../../../assets/images/sysgreen-mobile.jpg","../../../../../assets/images/sysgreen-notebook.jpg", "../../../../../assets/images/sysgreen-netbook.jpg"],
-    "title": "SysGreen",
-    "description": "O SysGreen foi desenvolvido para oferecer aos cidadãos uma ferramenta prática e eficaz para gerenciar a reciclagem de resíduos eletrônicos. Ele possibilita o agendamento de coletas, o acompanhamento do processo de reciclagem e a troca de resíduos por pontos, tudo em uma plataforma única e gratuita.",
-    "techs":  ['javascript', 'git','html5', 'css'],
-    "website": "https://lucasluis-dev.github.io/SysGreen/",
-    "github": "https://github.com/LucasLuis-Dev/SysGreen"
-  },
-  {
     "id": "5",
     "photos": ["../../../../../assets/images/hotcoffee-mobile.jpg","../../../../../assets/images/hotcoffee-notebook.jpg", "../../../../../assets/images/hotcoffee-netbook.jpg"],
     "title": "HotCoffee",
@@ -56,7 +57,16 @@ export const dataFake = [
     "github": "https://github.com/LucasLuis-Dev/Blog"
   },
   {
-    "id" : "6",
+    "id": "6",
+    "photos": ["../../../../../assets/images/sysgreen-mobile.jpg","../../../../../assets/images/sysgreen-notebook.jpg", "../../../../../assets/images/sysgreen-netbook.jpg"],
+    "title": "SysGreen",
+    "description": "O SysGreen foi desenvolvido para oferecer aos cidadãos uma ferramenta prática e eficaz para gerenciar a reciclagem de resíduos eletrônicos. Ele possibilita o agendamento de coletas, o acompanhamento do processo de reciclagem e a troca de resíduos por pontos, tudo em uma plataforma única e gratuita.",
+    "techs":  ['javascript', 'git','html5', 'css'],
+    "website": "https://lucasluis-dev.github.io/SysGreen/",
+    "github": "https://github.com/LucasLuis-Dev/SysGreen"
+  },
+  {
+    "id" : "7",
     "photos": ["../../../../../assets/images/dev-community-mobile.jpg","../../../../../assets/images/dev-community-notebook.jpg", "../../../../../assets/images/dev-community-netbook.jpg"],
     "title": "Dev Community",
     "description": "Desenvolvi o Dev Community, uma aplicação web que proporciona interação e colaboração entre desenvolvedores. Utilizei o framework Flask para criar a aplicação do zero, implementando recursos como autenticação de usuários e integração com banco de dados. ",
@@ -65,7 +75,7 @@ export const dataFake = [
     "github": "https://github.com/LucasLuis-Dev/Dev-Community"
   },
   {
-    "id": "7",
+    "id": "8",
     "photos": ["../../../../../assets/images/algoritmo-kruskal-mobile.jpg","../../../../../assets/images/algoritmo-kruskal-notebook.jpg", "../../../../../assets/images/algoritmo-kruskal-netbook.jpg"],
     "title": "Algoritmo de Kruskal",
     "description": "Este projeto trata de um problema ilustrativo onde há preocupações de segurança da comunicação por e-mail em uma instituição, identificando conexões importantes e confiáveis entre os membros.",
@@ -74,7 +84,7 @@ export const dataFake = [
     "github": "https://github.com/LucasLuis-Dev/Algoritmo-de-Kruskal"
   },
   {
-    "id": "8",
+    "id": "9",
     "photos": ["../../../../../assets/images/space-attack-mobile.jpg","../../../../../assets/images/space-attack-notebook.jpg","../../../../../assets/images/space-attack-netbook.jpg"],
     "title": "Space Attack",
     "description": "Space Attack é um jogo interativo baseado em Star Wars, onde o jogador controla uma nave e enfrenta asteróides e naves inimigas.",
@@ -83,7 +93,7 @@ export const dataFake = [
     "github": "https://github.com/LucasLuis-Dev/Projeto-P1-Space-Attack"
   },
   {
-    "id": "9",
+    "id": "10",
     "photos": ["../../../../../assets/images/doctor-care-mobile.jpg","../../../../../assets/images/doctor-care-notebook.jpg", "../../../../../assets/images/doctor-care-netbook.jpg"],
     "title": "Doctor Care",
     "description": "Projeto de Website pensado para Clinicas de saúde feito em conjunto no evento NLW Return proporcionado pela Rocketseat.",
