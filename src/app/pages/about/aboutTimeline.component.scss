@@ -146,6 +146,10 @@
                             background: #59B8FF;
                         }
 
+                        &:nth-child(8) &-info {
+                            background: #FF597D;
+                        }
+
                         &:nth-child(odd) &-info {
                             &-title::before {
                                 left: -7.7rem;

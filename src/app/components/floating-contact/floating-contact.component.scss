@@ -13,9 +13,6 @@
         border-radius: 1rem 0rem 0rem 1rem;
         transition: 200ms;
         animation: moveInRight 1.5s ease-in-out;
-        &:hover {
-            transform: scale(1.1);
-        }
     }
 
     @media screen and (max-width: 480px) {
