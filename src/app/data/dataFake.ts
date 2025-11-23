@@ -23,7 +23,7 @@ export const dataFake = [
     "title": "InvestView",
     "description": "InvestView é uma plataforma web desenvolvida em Vue.js que simplifica o acesso e a visualização de dados do mercado de ações brasileiro. O projeto oferece uma interface intuitiva e moderna para investidores que buscam acompanhar cotações, gráficos históricos e informações fundamentalistas de ativos da bolsa de valores de forma descomplicada.",
     "techs": ['vuejs', 'git','typescript', 'sass'],
-    "website": "https://invest-map.vercel.app/m",
+    "website": "https://invest-map.vercel.app",
     "github": "https://github.com/LucasLuis-Dev/InvestMap"
   },
   {
