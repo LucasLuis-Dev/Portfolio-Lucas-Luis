@@ -50,16 +50,25 @@ export class CardProjectComponent implements OnInit {
       }
     }
   }
+
   changeImage() { 
-   this.photoProject = this.ImagesProject[this.currentImageIndex];
-   this.currentImageIndex++
+    const imgElement = document.querySelector('.card-project-image-pic');
+    imgElement?.classList.add('fade-out');
+    
+    setTimeout(() => {
+      this.photoProject = this.ImagesProject[this.currentImageIndex];
+      this.currentImageIndex++;
 
-   if (this.currentImageIndex >= 3) {
-    this.currentImageIndex = 0;
-   }
+      if (this.currentImageIndex >= 3) {
+        this.currentImageIndex = 0;
+      }
+      
+      imgElement?.classList.remove('fade-out');
+    }, 500); // Tempo da animação de fade
 
-   setTimeout(() => this.changeImage(), 5000)
+    setTimeout(() => this.changeImage(), 5000);
   }
+
 
   ngOnInit(): void {
     setTimeout(() => {
