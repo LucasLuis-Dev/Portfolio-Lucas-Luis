@@ -1,26 +1,35 @@
 <div class="card-project__container" id="card-{{OrderProject}}">
     <figure class="card-project-image">
-        <img 
-         [src]="photoProject" 
-         alt="" 
-         class="card-project-image-pic">
-        
+        <img [src]="photoProject" alt="" class="card-project-image-pic">
+
     </figure>
 
     <div class="card-project-informations">
+        <div class="card-project-informations-header">
+            <span *ngFor="let tech of ListTechsProject" class="card-project-informations-header-line">{{ tech }}</span>
+        </div>
         <h3 class="card-project-informations-title">{{ titleProject }}</h3>
         <p class="card-project-informations-subtitle">{{ descriptionProject }}</p>
-        <ul class="card-project-informations-techs">
-            <li *ngFor="let tech of ListTechsProject">
-                <img class="card-project-informations-techs-image"  *ngIf="tech == 'tailwindcss' || tech == 'angularjs' || tech == 'django'"   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{{ tech }}/{{ tech }}-plain.svg" alt="">
-                <img class="card-project-informations-techs-image" *ngIf="tech != 'tailwindcss' && tech != 'angularjs' && tech != 'django'" [class.removeTech]="tech == 'tailwindcss' || tech == 'angularjs' || tech == 'django'" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{{ tech }}/{{ tech }}-original.svg" alt="">
-            </li>
-        </ul>
-        
-        
+
         <div class="card-project-informations-links">
-            <app-button content="Acessar site" *ngIf="WebsiteProject  !== ''" link="{{ WebsiteProject }} " [isDownload]="false" [newTab]=true></app-button>
-            <app-button content="Ver código fonte" link="{{ CodeProject }}" [isDownload]="false" [newTab]="true"></app-button>
+            <a href="{{ CodeProject }}" target="_blank">
+                Ver código fonte
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    data-lucide="arrow-up-right" aria-hidden="true" class="lucide lucide-arrow-up-right w-4 h-4">
+                    <path d="M7 7h10v10"></path>
+                    <path d="M7 17 17 7"></path>
+                </svg>
+            </a>
+            <a href="{{ WebsiteProject }}" target="_blank">
+                Acessar site
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    data-lucide="arrow-up-right" aria-hidden="true" class="lucide lucide-arrow-up-right w-4 h-4">
+                    <path d="M7 7h10v10"></path>
+                    <path d="M7 17 17 7"></path>
+                </svg>
+            </a>
         </div>
     </div>
 </div>

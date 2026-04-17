@@ -7,7 +7,7 @@
     &__container {
         display: flex;
         flex-direction: column;
-        padding: 2rem $padding-sides;
+        padding: 2rem 0;
         gap: 3rem;
     }
 
@@ -18,14 +18,22 @@
             animation: moveInUp 1s ease-in-out;
             opacity: 1;
         }
-        
+
         & p {
             @include paragraph;
         }
 
         & h2 {
             @include title;
+            text-transform: uppercase;
         }
     }
 
+    @media screen and (max-width: 480px) {
+        &__container {
+            flex-direction: column;
+            gap: 3rem;
+            padding: 2rem $padding-sides;
+        }
+    }
 }

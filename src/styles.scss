@@ -5,33 +5,26 @@
 
 
 body {
-    background-color: #f9faff;
-    overflow-x: hidden;
-    zoom: 100%;
+  background-color: #f9faff;
+  overflow-x: hidden;
+  zoom: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    &::-webkit-scrollbar {
-      width: 1rem;
-    }
-    &::-webkit-scrollbar-track {
-      background: transparent;        
-    }
-    &::-webkit-scrollbar-thumb {
-      background-color: $color-black;    
-      border-radius: 2rem;   
-      border: 0.1rem solid $color-white   
-    }
-}
 
-// MOBILE
-@media screen and (max-width: 480px) {
-  body {
-    zoom: 90%;
+  &::-webkit-scrollbar {
+    width: 1rem;
   }
-}
 
-// NOTBOOKS
-@media screen and (min-width: 1000px) and (max-width: 1580px) {
-  body {
-    zoom: 80%;
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-black;
+    border-radius: 2rem;
+    border: 0.1rem solid $color-white
   }
 }

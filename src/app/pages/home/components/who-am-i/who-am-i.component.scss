@@ -6,7 +6,7 @@
     &__container {
         display: flex;
         flex-direction: row;
-        padding: 2rem $padding-sides;
+        padding: 2rem 0;
         opacity: 0;
 
         &.animar {
@@ -17,6 +17,7 @@
 
     &-title {
         width: 30%;
+
         & p {
             @include paragraph;
         }
@@ -35,7 +36,8 @@
     @media screen and (max-width: 480px) {
         &__container {
             flex-direction: column;
-            gap: 3rem
+            gap: 3rem;
+            padding: 2rem $padding-sides;
         }
 
         &-title {

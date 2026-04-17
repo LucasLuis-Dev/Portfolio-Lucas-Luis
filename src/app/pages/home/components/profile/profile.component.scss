@@ -2,106 +2,85 @@
 @import "../../../../../scss/abstracts/variables";
 @import "../../../../../scss/abstracts/mixins";
 
+.profile__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 9rem);
 
-.profile {
-    &__container {
+    & .profile-available {
+        display: inline-block;
+        width: fit-content;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 1.6rem;
+        color: #14b8a6;
+        margin-bottom: 2.4rem;
+        padding: .4rem 1.2rem;
+        border-radius: 999rem;
+        background: rgba(20, 184, 166, 0.1);
+        border: 1px solid rgba(20, 184, 166, 0.2);
+
+    }
+
+    & .profile-title {
+        font-size: 9.6rem;
+        font-weight: 700;
+        line-height: 1;
+        font-weight: 700;
+        letter-spacing: -.5rem;
+        margin-bottom: 3.2rem;
+
+        & span {
+            color: rgb(113 113 122);
+        }
+    }
+
+    & .profile-description {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 2.8rem;
+        letter-spacing: .5rem;
+        color: rgb(161 161 170);
+        max-width: 57.6rem;
+        margin-bottom: 4rem;
+    }
+
+    & .profile-buttons {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem $padding-sides;
-    }
+        gap: 1rem;
 
-    &-photo {
-        width: 40%;
-        text-align: center;
-        animation: moveInLeft 1.5s ease-in-out;
+        & .btn-primary {
+            background-color: #0d9488;
+            color: white;
+            border: none;
+            padding: 1.6rem 3.2rem;
+            border-radius: .8rem;
+            font-weight: 600;
+            font-size: 1.6rem;
+            cursor: pointer;
+            transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        & img {
-            width: 85%;
-            border-radius: 50%;
-        }
-    }
-
-    &-about {
-        display: flex;
-        flex-direction: column;
-        animation: moveInRight 1.5s ease-in-out;
-
-        &-subtitle {
-            @include title;
-            font-size: 2rem;
-            padding: 1rem;
-            background-color: $color-black;
-            color: $color-white;
-            width: fit-content;
-            border-radius: 5rem
+            &:hover {
+                background-color: #0d9488;
+            }
         }
 
-        &-title {
-            @include title;
-            font-size: 5.5rem;
-        }
+        & .btn-secondary {
+            background-color: #27272a;
+            color: white;
+            border: none;
+            padding: 1.6rem 3.2rem;
+            border-radius: .8rem;
+            font-weight: 600;
+            font-size: 1.6rem;
+            cursor: pointer;
+            transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        &-list {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-
-            &-item {
-                @include paragraph;
-                line-height: normal;
-                font-size: 1.6rem;
+            &:hover {
+                background-color: #0d9488;
             }
         }
     }
-
-    @media screen and (max-width: 480px) {
-        &__container {
-            flex-direction: column;
-            padding: 2rem $padding-sides;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        &-photo {
-            width: 100%;
-            text-align: center;
-            animation: moveInLeft 1.5s ease-in-out;
-    
-            & img {
-                width: 85%;
-                border-radius: 50%;
-            }
-        }
-    
-    
-        &-about {
-            justify-content: center;
-            align-items: center;
-            gap: 0.5rem;
-            
-            &-title {
-                font-size: 3.7rem;
-            }
-    
-            &-subtitle {
-                font-size: 1.7rem;
-            }
-    
-            &-list {
-                justify-content: center;
-                align-items: center;
-    
-                &-item {
-                    text-align: center;
-                    font-size: 1.6rem;
-                }
-            }
-        }
-    }
-
-    
-   
 }
