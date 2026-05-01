@@ -2,7 +2,7 @@
     &__container {
         display: flex;
         flex-direction: column;
-        gap: 5rem;
+        scroll-behavior: smooth;
     }
 
     @media screen and (max-width: 480px) {

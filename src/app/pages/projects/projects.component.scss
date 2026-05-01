@@ -7,8 +7,9 @@
     &__container {
         display: flex;
         flex-direction: column;
-        padding: 2rem 0;
+        padding: 12.8rem 0;
         gap: 3rem;
+        border-bottom: .1rem solid $color-text-gray;
     }
 
     &-title {
@@ -25,7 +26,7 @@
 
         & h2 {
             @include title;
-            text-transform: uppercase;
+            font-size: 4rem;
         }
     }
 

@@ -6,7 +6,8 @@
     &__container {
         display: flex;
         flex-direction: row;
-        padding: 2rem 0;
+        padding: 12.8rem 0;
+        border-bottom: .1rem solid $color-text-gray;
         opacity: 0;
 
         &.animar {
@@ -24,12 +25,14 @@
 
         & h2 {
             @include title;
+            font-size: 4rem;
         }
     }
 
     &-paragraph {
         width: 35%;
         padding: 3rem;
+        padding-bottom: 0rem;
         @include paragraph;
     }
 

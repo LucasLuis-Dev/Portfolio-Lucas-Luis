@@ -76,6 +76,7 @@
                             border-radius: 2rem;
                             padding: 4rem;
                             opacity: 0;
+                            background-color: rgba(20, 184, 166, 0.1);
 
                             &.normal-animation {
                                 opacity: 1;
@@ -88,7 +89,7 @@
                             }
 
                             &-title {
-                                color: $color-white;
+                                color: $color-black;
                                 font-weight: 600;
                                 position: relative;
 
@@ -103,55 +104,23 @@
                                 }
                             }
 
+                            span {
+                                color: $color-grey-dark;
+                            }
+
                             p {
                                 @include paragraph;
                                 font-size: 1.6rem;
-                                color: $color-white;
+                                color: $color-text-gray;
                             }
 
                             @media screen and (max-width:480px) {
                                 p {
                                     @include paragraph;
                                     font-size: 1.5rem;
-                                    color: $color-white;
+                                    color: $color-text-gray;
                                 }
                             }
-                        }
-
-                        &:nth-child(1) &-info {
-                            background: #5cd24c;
-                        }
-
-                        &:nth-child(2) &-info {
-                            background: #59B8FF;
-                        }
-
-                        &:nth-child(3) &-info {
-                            background: #FF597D;
-                        }
-
-                        &:nth-child(4) &-info {
-                            background: #FF9F5A;
-                        }
-
-                        &:nth-child(5) &-info {
-                            background: #BA70E5;
-                        }
-
-                        &:nth-child(6) &-info {
-                            background: #5cd24c;
-                        }
-
-                        &:nth-child(7) &-info {
-                            background: #59B8FF;
-                        }
-
-                        &:nth-child(8) &-info {
-                            background: #FF597D;
-                        }
-
-                         &:nth-child(9) &-info {
-                            background: #FF9F5A;
                         }
 
                         &:nth-child(odd) &-info {

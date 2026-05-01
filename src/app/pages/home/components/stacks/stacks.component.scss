@@ -3,14 +3,36 @@
 
 .stacks {
     &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6.4rem;
+        padding: 12.8rem 0;
+        border-top: .1rem solid $color-text-gray;
+        border-bottom: .1rem solid $color-text-gray;
+    }
+
+    &-text-box {
         display: flex;
-        padding: 2rem $padding-sides;
-      
+        flex-direction: column;
+        gap: 2.4rem;
+
+        & h2 {
+            font-size: 3.6rem;
+            font-weight: 700;
+        }
+
+        & p {
+            color: $color-text-gray;
+            font-size: 1.8rem;
+            line-height: 1.625;
+
+        }
     }
 
     &-list {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1.2rem;
         width: 100%;
         list-style: none;
 
@@ -20,27 +42,16 @@
             align-items: center;
             animation: moveInUp 1.5s ease-in-out;
 
-            & svg {
-                width: 7.5rem;
-                transition: 200ms;
-            }
-
             & p {
-                opacity: 0;
+                padding: 1.2rem 2.4rem;
+                border-radius: 1.2rem;
+                background: rgba(20, 184, 166, 0.1);
+                border: .1rem solid rgb(255 255 255 / 0.05);
                 transition: 200ms;
                 font-size: 1.3rem;
-               
-            }
 
-            &:hover {
-
-                & svg {
-                    transform: translateY(-1rem);
-                }
-
-                & p {
-                    opacity: 1;
-                    transform: translateY(1rem);
+                &:hover {
+                    border-color: black;
                 }
             }
         }
@@ -51,7 +62,7 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 1.5rem;
-    
+
             &-item {
                 & svg {
                     width: 5rem;

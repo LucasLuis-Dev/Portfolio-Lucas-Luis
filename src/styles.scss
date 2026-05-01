@@ -4,6 +4,10 @@
 @import "scss/base/typografy";
 
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f9faff;
   overflow-x: hidden;
