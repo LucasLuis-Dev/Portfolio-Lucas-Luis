@@ -1,5 +1,4 @@
 @import "../../../scss/base/animations";
-@import "../../../scss/abstracts/variables";
 
 .navbar {
     &__container {
@@ -8,6 +7,7 @@
         max-width: 120rem;
         width: 100%;
         justify-content: space-between;
+        align-items: center;
         padding: 2rem 0;
         animation: moveInUp 1s ease-out;
         z-index: 999;
@@ -16,20 +16,89 @@
     &-logo {
         font-size: 1.5rem;
         text-decoration: none;
-        color: $color-black;
+        color: var(--color-logo);
+        transition: var(--transition-theme);
     }
 
+    &-actions {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+
+    // ─── Theme Toggle Button ─────────────────────────────────
+    &-theme-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .5rem;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border: 1px solid var(--color-border);
+        background-color: var(--color-nav-bg);
+        backdrop-filter: blur(1.2rem);
+        cursor: pointer;
+        transition: all 200ms ease;
+        color: var(--color-nav-link);
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            background-color: var(--color-surface);
+            border-color: rgba(20, 184, 166, 0.4);
+            transform: scale(1.08);
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+
+    .theme-icon {
+        width: 1.8rem;
+        height: 1.8rem;
+        position: absolute;
+        transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        stroke: currentColor;
+    }
+
+    .theme-icon--sun {
+        opacity: 0;
+        transform: rotate(-90deg) scale(0.5);
+    }
+
+    .theme-icon--moon {
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+    }
+
+    // When dark mode is active
+    [data-theme="dark"] & {
+        .theme-icon--sun {
+            opacity: 1;
+            transform: rotate(0deg) scale(1);
+        }
+
+        .theme-icon--moon {
+            opacity: 0;
+            transform: rotate(90deg) scale(0.5);
+        }
+    }
+
+    // ─────────────────────────────────────────────────────────
 
     &-list {
         display: flex;
         gap: 3.2rem;
         list-style: none;
-        background-color: rgb(0 0 0 / 0.05);
+        background-color: var(--color-nav-bg);
         border-radius: 9999px;
         border-width: 1px;
-        border-color: rgb(255 255 255 / 0.05);
+        border-color: var(--color-nav-border);
         backdrop-filter: blur(1.2rem);
         padding: 1.2rem 2.4rem;
+        transition: var(--transition-theme);
 
         &-link a {
             text-decoration: none;
@@ -39,18 +108,25 @@
             padding: 1rem;
             border-radius: 5rem;
             transition: 150ms;
-            color: $color-black;
+            color: var(--color-nav-link);
         }
 
         &-link a:hover {
-            color: $color-white;
+            color: #14b8a6;
         }
     }
 
     &-linkedin {
+        display: flex;
+
         & svg {
             width: 2rem;
-            fill: $color-black;
+            fill: var(--color-nav-link);
+            transition: fill 300ms ease;
+        }
+
+        &:hover svg {
+            fill: #14b8a6;
         }
     }
 
@@ -62,7 +138,7 @@
     @media screen and (max-width: 480px) {
 
         &_container {
-            padding: 2rem $padding-sides;
+            padding: 2rem 10%;
             padding-top: 0.5rem;
             position: relative;
         }
@@ -72,6 +148,10 @@
         }
 
         &-list {
+            display: none;
+        }
+
+        &-actions {
             display: none;
         }
 
@@ -85,18 +165,18 @@
             width: 15rem;
             border-radius: 1rem;
             padding: 1.5rem;
-            background: black;
+            background: var(--color-mobile-menu-bg);
             clip-path: circle(12% at 83.5% 12.5%);
             transition: all .5s ease-in-out;
 
             &.active {
                 clip-path: circle(75%);
-                background: black;
+                background: var(--color-mobile-menu-bg);
             }
 
             & svg {
                 width: 2rem;
-                fill: white;
+                fill: #ffffff;
                 margin-top: .2rem;
                 margin-left: .2rem;
             }
@@ -117,18 +197,51 @@
 
                     & a {
                         text-decoration: none;
-                        color: $color-white;
+                        color: #ffffff;
                         font-weight: 500;
 
                         & svg {
                             width: 3rem;
+                            stroke: #ffffff;
                         }
                     }
                 }
             }
         }
 
+        .navbar-mobile-theme {
+            margin-top: .5rem;
+        }
 
+        .navbar-mobile-theme-btn {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 5rem;
+            padding: .6rem 1.6rem;
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 1.3rem;
+            font-weight: 500;
+            transition: all 200ms ease;
 
+            &:hover {
+                background: rgba(20, 184, 166, 0.2);
+                border-color: rgba(20, 184, 166, 0.4);
+            }
+
+            & svg {
+                width: 1.8rem;
+                height: 1.8rem;
+                stroke: #ffffff !important;
+                fill: none !important;
+            }
+
+            & span {
+                color: #ffffff;
+            }
+        }
     }
 }

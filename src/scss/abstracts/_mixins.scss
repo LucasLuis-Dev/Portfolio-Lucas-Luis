@@ -24,24 +24,24 @@
 
     &:hover {
         transform: translateY(-0.3rem);
-        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        box-shadow: 0 1rem 2rem var(--color-shadow, rgba(0,0,0,.2));
     }
 
     &:active {
         transform: translateY(-0.1rem);
-        box-shadow: 0 0.5rem 1rem rgba($color-black, .2);
+        box-shadow: 0 0.5rem 1rem var(--color-shadow, rgba(0,0,0,.2));
     }
 
     &--transparent {
         background-color: transparent;
-        color: $color-text-gray;
+        color: var(--color-text-muted, #8a8a8a);
         font-weight: 600;
-        border: 0.1rem solid $color-text-gray;
+        border: 0.1rem solid var(--color-text-muted, #8a8a8a);
 
         &:hover {
-            color: $color-white;
-            border: 0.1rem solid $color-black;
-            background-color: $color-black;
+            color: #ffffff;
+            border: 0.1rem solid var(--color-text-primary, #000);
+            background-color: var(--color-text-primary, #000);
         }
     }
 
@@ -65,7 +65,7 @@
 }
 
 @mixin paragraph {
-    color: $color-text-gray;
+    color: var(--color-text-muted, #8a8a8a);
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 3.5rem;
@@ -73,6 +73,6 @@
 }
 
 @mixin title {
-    color: $color-black;
+    color: var(--color-text-primary, #000);
     font-size: 3.5rem;
 }

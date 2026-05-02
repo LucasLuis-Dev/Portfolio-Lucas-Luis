@@ -3,15 +3,17 @@
 .footer {
     &__container {
         display: flex;
-        padding: 3.5rem $padding-sides;
+        padding: 3.5rem 10%;
         justify-content: center;
-        background-color: $color-black;
+        background-color: var(--color-footer-bg);
         text-align: center;
+        transition: var(--transition-theme);
     }
 
     &-text {
         font-size: 1.6rem;
-        color: $color-white;
+        color: var(--color-footer-text);
+        transition: var(--transition-theme);
     }
 
 }

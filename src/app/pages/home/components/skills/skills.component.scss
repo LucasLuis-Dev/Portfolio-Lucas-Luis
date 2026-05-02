@@ -7,7 +7,7 @@
     &__container {
         display: flex;
         flex-direction: column;
-        padding: 2rem $padding-sides;
+        padding: 2rem 10%;
         gap: 3rem;
         opacity: 0;
 
@@ -19,11 +19,13 @@
 
     &-title {
         & p {
-            @include paragraph;        
+            @include paragraph;
+            color: var(--color-text-muted);
         }
 
         & h2 {
             @include title;
+            color: var(--color-text-primary);
         }
     }
 
@@ -44,10 +46,10 @@
             gap: 2rem;
             padding: 4rem 0;
             border-radius: 2rem;
-            box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-            background: $color-white;
+            box-shadow: 0px 10px 15px -3px var(--color-shadow);
+            background: var(--color-card-bg);
             transition: 200ms;
-            color: rgb(45, 45, 45);
+            color: var(--color-text-primary);
 
         
             &:nth-child(1) {
@@ -88,6 +90,7 @@
                     transform: translateX(12px) translateY(-12px);
                     box-shadow: rgba(255, 159, 90, 0.4) -5px 5px, rgba(255, 159, 90, 0.3) -10px 10px, rgba(255, 159, 90, 0.2) -15px 15px, rgba(255, 159, 90, 0.1) -20px 20px, rgba(255, 159, 90, 0.05) -25px 25px;
                     
+
                 }
 
                 

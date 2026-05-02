@@ -23,16 +23,18 @@
         width: 100%;
         padding: 8rem;
         border-radius: 4.8rem;
-        background-color: rgba(20, 184, 166, 0.1);
+        background-color: var(--color-surface);
         text-align: center;
+        transition: var(--transition-theme);
 
         & h2 {
             font-size: 6.2rem;
             font-weight: 700;
             line-height: 1;
             letter-spacing: -0.05em;
-            color: $color-black;
+            color: var(--color-text-primary);
             margin-bottom: 3.2rem;
+            transition: var(--transition-theme);
         }
 
         & p {
@@ -40,8 +42,9 @@
             line-height: 2.8rem;
             margin-bottom: 4.8rem;
             max-width: 51.2rem;
-            color: $color-text-gray;
+            color: var(--color-text-muted);
             text-align: center;
+            transition: var(--transition-theme);
         }
 
         & .mail {
@@ -49,11 +52,11 @@
             font-size: 4.8rem;
             line-height: 1;
             font-weight: 500;
-            color: $color-grey-dark;
+            color: var(--color-mail);
             transition: all 250ms;
 
             &:hover {
-                color: rgba(0, 0, 0, 0.788);
+                color: var(--color-mail-hover);
             }
         }
 
@@ -65,10 +68,11 @@
 
             & a {
                 text-decoration: none;
-                color: $color-grey-dark;
+                color: var(--color-contact-link);
+                transition: color 250ms ease;
 
                 &:hover {
-                    color: rgba(0, 0, 0, 0.788);
+                    color: var(--color-contact-link-hover);
                 }
             }
         }

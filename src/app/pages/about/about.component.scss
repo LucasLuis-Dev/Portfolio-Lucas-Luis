@@ -8,7 +8,8 @@
         flex-direction: column;
         gap: 3rem;
         padding: 12.8rem 0;
-        border-bottom: .1rem solid $color-text-gray;
+        border-bottom: .1rem solid var(--color-border);
+        transition: border-color 300ms ease;
     }
 
     &-title {
@@ -16,10 +17,12 @@
 
         & p {
             @include paragraph;
+            color: var(--color-text-muted);
         }
 
         & h2 {
             @include title;
+            color: var(--color-text-primary);
         }
     }
 

@@ -7,8 +7,9 @@
         display: flex;
         flex-direction: row;
         padding: 12.8rem 0;
-        border-bottom: .1rem solid $color-text-gray;
+        border-bottom: .1rem solid var(--color-border);
         opacity: 0;
+        transition: border-color 300ms ease;
 
         &.animar {
             animation: moveInUp 1s ease-in-out;
@@ -21,11 +22,13 @@
 
         & p {
             @include paragraph;
+            color: var(--color-text-muted);
         }
 
         & h2 {
             @include title;
             font-size: 4rem;
+            color: var(--color-text-primary);
         }
     }
 
@@ -34,13 +37,14 @@
         padding: 3rem;
         padding-bottom: 0rem;
         @include paragraph;
+        color: var(--color-text-muted);
     }
 
     @media screen and (max-width: 480px) {
         &__container {
             flex-direction: column;
             gap: 3rem;
-            padding: 2rem $padding-sides;
+            padding: 2rem 10%;
         }
 
         &-title {
