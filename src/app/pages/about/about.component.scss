@@ -7,17 +7,22 @@
         display: flex;
         flex-direction: column;
         gap: 3rem;
-        padding: 2rem $padding-sides;
+        padding: 12.8rem 0;
+        border-bottom: .1rem solid var(--color-border);
+        transition: border-color 300ms ease;
     }
 
     &-title {
         animation: moveInUp 1s ease-in-out;
+
         & p {
             @include paragraph;
+            color: var(--color-text-muted);
         }
 
         & h2 {
             @include title;
+            color: var(--color-text-primary);
         }
     }
 
@@ -34,5 +39,12 @@
         }
     }
 
-    
+    @media screen and (max-width: 480px) {
+        &__container {
+            padding: 8rem 10% 4rem;
+            gap: 2rem;
+        }
+    }
+
+
 }

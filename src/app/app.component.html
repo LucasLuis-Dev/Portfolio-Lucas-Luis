@@ -1,8 +1,10 @@
 <div class="app__container">
-    <app-navbar></app-navbar>
-    <app-floating-contact></app-floating-contact>
-    <router-outlet></router-outlet>
-    <app-contact></app-contact>
-    <app-footer></app-footer>
-    <app-arrow-to-top></app-arrow-to-top>
+    <div style="max-width: 120rem;">
+        <app-navbar></app-navbar>
+        <!-- <app-floating-contact></app-floating-contact> -->
+        <router-outlet></router-outlet>
+        <app-contact></app-contact>
+        <app-arrow-to-top></app-arrow-to-top>
+    </div>
+    <app-footer style="width: 100%;"></app-footer>
 </div>

@@ -6,8 +6,10 @@
     &__container {
         display: flex;
         flex-direction: row;
-        padding: 2rem $padding-sides;
+        padding: 12.8rem 0;
+        border-bottom: .1rem solid var(--color-border);
         opacity: 0;
+        transition: border-color 300ms ease;
 
         &.animar {
             animation: moveInUp 1s ease-in-out;
@@ -17,25 +19,34 @@
 
     &-title {
         width: 30%;
+
         & p {
             @include paragraph;
+
+            color: var(--color-text-muted);
         }
 
         & h2 {
             @include title;
+            font-size: 4rem;
+            color: var(--color-text-primary);
         }
     }
 
     &-paragraph {
         width: 35%;
         padding: 3rem;
+        padding-bottom: 0rem;
         @include paragraph;
+        line-height: 1.625;
+        color: var(--color-text-muted);
     }
 
     @media screen and (max-width: 480px) {
         &__container {
             flex-direction: column;
-            gap: 3rem
+            gap: 3rem;
+            padding: 8rem 5%;
         }
 
         &-title {

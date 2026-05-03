@@ -26,7 +26,8 @@
                             content: "";
                             position: absolute;
                             width: 50%;
-                            border: solid $color-black;
+                            border: solid var(--color-timeline-border);
+                            transition: border-color 300ms ease;
                         }
 
                         &:nth-child(odd)::before {
@@ -71,11 +72,11 @@
                             display: flex;
                             flex-direction: column;
                             gap: 1rem;
-                            background: $color-white;
-                            color: $color-white;
                             border-radius: 2rem;
                             padding: 4rem;
                             opacity: 0;
+                            background-color: var(--color-surface);
+                            transition: var(--transition-theme);
 
                             &.normal-animation {
                                 opacity: 1;
@@ -88,70 +89,42 @@
                             }
 
                             &-title {
-                                color: $color-white;
+                                color: var(--color-text-primary);
                                 font-weight: 600;
                                 position: relative;
+                                transition: var(--transition-theme);
 
                                 &::before {
                                     content: "";
                                     position: absolute;
                                     width: 1rem;
                                     height: 1rem;
-                                    background: $color-white;
+                                    background: var(--color-timeline-dot-bg);
                                     border-radius: 99.9rem;
-                                    border: 0.5rem solid $color-black;
+                                    border: 0.5rem solid var(--color-timeline-dot-border);
+                                    transition: var(--transition-theme);
                                 }
+                            }
+
+                            span {
+                                color: var(--color-text-secondary);
+                                transition: var(--transition-theme);
                             }
 
                             p {
                                 @include paragraph;
                                 font-size: 1.6rem;
-                                color: $color-white;
+                                color: var(--color-text-muted);
+                                transition: var(--transition-theme);
                             }
 
                             @media screen and (max-width:480px) {
                                 p {
                                     @include paragraph;
                                     font-size: 1.5rem;
-                                    color: $color-white;
+                                    color: var(--color-text-muted);
                                 }
                             }
-                        }
-
-                        &:nth-child(1) &-info {
-                            background: #5cd24c;
-                        }
-
-                        &:nth-child(2) &-info {
-                            background: #59B8FF;
-                        }
-
-                        &:nth-child(3) &-info {
-                            background: #FF597D;
-                        }
-
-                        &:nth-child(4) &-info {
-                            background: #FF9F5A;
-                        }
-
-                        &:nth-child(5) &-info {
-                            background: #BA70E5;
-                        }
-
-                        &:nth-child(6) &-info {
-                            background: #5cd24c;
-                        }
-
-                        &:nth-child(7) &-info {
-                            background: #59B8FF;
-                        }
-
-                        &:nth-child(8) &-info {
-                            background: #FF597D;
-                        }
-
-                         &:nth-child(9) &-info {
-                            background: #FF9F5A;
                         }
 
                         &:nth-child(odd) &-info {

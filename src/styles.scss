@@ -3,35 +3,102 @@
 @import "scss/abstracts/mixins";
 @import "scss/base/typografy";
 
+// ─── CSS Custom Properties (Light theme default) ─────────────────────────────
+
+:root,
+[data-theme="light"] {
+  --color-bg: #f9faff;
+  --color-bg-secondary: #ffffff;
+  --color-surface: rgba(20, 184, 166, 0.06);
+  --color-text-primary: #18181b;
+  --color-text-secondary: #52525b;
+  --color-text-muted: #8a8a8a;
+  --color-border: rgba(0, 0, 0, 0.10);
+  --color-nav-bg: rgba(0, 0, 0, 0.05);
+  --color-nav-border: rgba(255, 255, 255, 0.05);
+  --color-nav-link: #18181b;
+  --color-mobile-menu-bg: rgba(0, 0, 0, 0.05);
+  --color-logo: #18181b;
+  --color-footer-bg: #18181b;
+  --color-footer-text: #ffffff;
+  --color-scrollbar-thumb: #18181b;
+  --color-scrollbar-track: transparent;
+  --color-card-bg: #ffffff;
+  --color-timeline-border: #18181b;
+  --color-timeline-dot-border: #18181b;
+  --color-timeline-dot-bg: #ffffff;
+  --color-shadow: rgba(0, 0, 0, 0.10);
+  --color-mail: #52525b;
+  --color-mail-hover: rgba(0, 0, 0, 0.788);
+  --color-contact-link: #52525b;
+  --color-contact-link-hover: rgba(0, 0, 0, 0.788);
+  --transition-theme: background-color 300ms ease, color 300ms ease, border-color 300ms ease, fill 300ms ease, box-shadow 300ms ease;
+}
+
+[data-theme="dark"] {
+  --color-bg: #09090b;
+  --color-bg-secondary: #18181b;
+  --color-surface: rgba(20, 184, 166, 0.08);
+  --color-text-primary: #fafafa;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #71717a;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-nav-bg: rgba(255, 255, 255, 0.05);
+  --color-nav-border: rgba(255, 255, 255, 0.08);
+  --color-nav-link: #fafafa;
+  --color-mobile-menu-bg: #27272a;
+  --color-logo: #fafafa;
+  --color-footer-bg: #000000;
+  --color-footer-text: #a1a1aa;
+  --color-scrollbar-thumb: #3f3f46;
+  --color-scrollbar-track: transparent;
+  --color-card-bg: #18181b;
+  --color-timeline-border: #fafafa;
+  --color-timeline-dot-border: #fafafa;
+  --color-timeline-dot-bg: #09090b;
+  --color-shadow: rgba(0, 0, 0, 0.40);
+  --color-mail: #a1a1aa;
+  --color-mail-hover: #fafafa;
+  --color-contact-link: #a1a1aa;
+  --color-contact-link-hover: #fafafa;
+  --transition-theme: background-color 300ms ease, color 300ms ease, border-color 300ms ease, fill 300ms ease, box-shadow 300ms ease;
+}
+
+// ─── Global base ─────────────────────────────────────────────────────────────
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-    background-color: #f9faff;
-    overflow-x: hidden;
-    zoom: 100%;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  overflow-x: hidden;
+  zoom: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-theme);
 
-    &::-webkit-scrollbar {
-      width: 1rem;
-    }
-    &::-webkit-scrollbar-track {
-      background: transparent;        
-    }
-    &::-webkit-scrollbar-thumb {
-      background-color: $color-black;    
-      border-radius: 2rem;   
-      border: 0.1rem solid $color-white   
-    }
-}
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
 
-// MOBILE
-@media screen and (max-width: 480px) {
-  body {
-    zoom: 90%;
+  &::-webkit-scrollbar-track {
+    background: var(--color-scrollbar-track);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-scrollbar-thumb);
+    border-radius: 2rem;
+    border: 0.1rem solid var(--color-bg);
   }
 }
 
-// NOTBOOKS
-@media screen and (min-width: 1000px) and (max-width: 1580px) {
-  body {
-    zoom: 80%;
-  }
+// Smooth transitions across all themed elements
+*,
+*::before,
+*::after {
+  transition: background-color 300ms ease, color 300ms ease, border-color 300ms ease;
 }

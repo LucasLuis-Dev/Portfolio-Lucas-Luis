@@ -9,16 +9,18 @@ import { dataFake } from 'src/app/data/dataFake';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-  projects: any = dataFake; 
+  projects: any = dataFake;
 
-  rotaAtual:string = '';
- 
-  constructor(private router: Router){
+  rotaAtual: string = '';
+
+  constructor(private router: Router) {
     this.rotaAtual = this.router.url;
   }
   ngOnInit(): void {
     if (this.rotaAtual == '/projects') {
       this.adicionarClasseSeVisivel()
+    } else {
+      this.projects = this.projects.slice(0, 3);
     }
   }
 
@@ -42,5 +44,5 @@ export class ProjectsComponent implements OnInit {
 
       count++;
     });
-}
+  }
 }
