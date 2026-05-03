@@ -58,9 +58,15 @@
     }
 
     @media screen and (max-width: 480px) {
+        &__container {
+            grid-template-columns: 1fr;
+            padding: 8rem 5%;
+            gap: 2rem;
+        }
+
         &-list {
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 1.5rem;
 
             &-item {

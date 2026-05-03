@@ -87,4 +87,35 @@
             }
         }
     }
+
+    @media screen and (max-width: 480px) {
+        padding: 0 5%;
+        height: auto;
+        min-height: 100vh;
+
+        & .profile-title {
+            font-size: 5.5rem;
+            letter-spacing: -.2rem;
+            margin-bottom: 2.4rem;
+        }
+
+        & .profile-description {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            letter-spacing: .1rem;
+            max-width: 100%;
+            margin-bottom: 3.2rem;
+        }
+
+        & .profile-buttons {
+            flex-direction: column;
+            width: 100%;
+
+            & .btn-primary,
+            & .btn-secondary {
+                text-align: center;
+                padding: 1.4rem 2.4rem;
+            }
+        }
+    }
 }

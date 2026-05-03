@@ -59,6 +59,11 @@
     }
 
     @media screen and (max-width: 480px) {
+        &__container {
+            padding: 8rem 10% 4rem;
+            min-height: auto;
+        }
+
         &-list {
             grid-template-columns: 1fr;
         }

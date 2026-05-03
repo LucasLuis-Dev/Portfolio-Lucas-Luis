@@ -137,14 +137,14 @@
 
     @media screen and (max-width: 480px) {
 
-        &_container {
-            padding: 2rem 10%;
+        &__container {
+            padding: 2rem 5%;
             padding-top: 0.5rem;
-            position: relative;
+            align-items: flex-start;
         }
 
         &-logo {
-            padding-top: 1rem;
+            padding-top: 0rem;
         }
 
         &-list {
@@ -155,28 +155,33 @@
             display: none;
         }
 
+
+
         &-mobile-btn {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-end;
-            position: absolute;
-            right: 10%;
+            position: sticky;
+            right: 5%;
             width: 15rem;
             border-radius: 1rem;
             padding: 1.5rem;
-            background: var(--color-mobile-menu-bg);
-            clip-path: circle(12% at 83.5% 12.5%);
+            background-color: var(--color-mobile-menu-bg);
+            clip-path: circle(10% at 83.5% 10.5%);
             transition: all .5s ease-in-out;
 
             &.active {
                 clip-path: circle(75%);
-                background: var(--color-mobile-menu-bg);
+                background-color: var(--color-nav-bg);
+                border-width: 1px;
+                border-color: var(--color-nav-border);
+                backdrop-filter: blur(1.2rem);
             }
 
             & svg {
                 width: 2rem;
-                fill: #ffffff;
+                fill: var(--color-nav-link);
                 margin-top: .2rem;
                 margin-left: .2rem;
             }
@@ -197,12 +202,28 @@
 
                     & a {
                         text-decoration: none;
-                        color: #ffffff;
+                        color: var(--color-nav-link);
                         font-weight: 500;
 
                         & svg {
                             width: 3rem;
-                            stroke: #ffffff;
+                            stroke: var(--color-nav-link);
+                        }
+                    }
+                }
+            }
+        }
+
+        [data-theme="light"] & {
+            &-mobile-btn {
+                & svg {
+                    fill: #000;
+                }
+
+                &-dropdown-menu-open {
+                    &-link {
+                        & a {
+                            color: #000 !important;
                         }
                     }
                 }
@@ -222,7 +243,7 @@
             border-radius: 5rem;
             padding: .6rem 1.6rem;
             cursor: pointer;
-            color: #ffffff;
+            color: var(--color-nav-link);
             font-size: 1.3rem;
             font-weight: 500;
             transition: all 200ms ease;
@@ -235,12 +256,12 @@
             & svg {
                 width: 1.8rem;
                 height: 1.8rem;
-                stroke: #ffffff !important;
+                stroke: var(--color-nav-link) !important;
                 fill: none !important;
             }
 
             & span {
-                color: #ffffff;
+                color: var(--color-nav-link);
             }
         }
     }

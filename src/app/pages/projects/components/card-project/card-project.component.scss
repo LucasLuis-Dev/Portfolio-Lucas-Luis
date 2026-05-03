@@ -89,12 +89,6 @@
             transition: var(--transition-theme);
         }
 
-        @media screen and (max-width: 480px) {
-            &-title {
-                text-align: center;
-            }
-        }
-
         &-subtitle {
             @include paragraph;
             text-align: left;
@@ -171,6 +165,7 @@
 
             &-subtitle {
                 @include paragraph;
+                line-height: 1.625;
             }
 
             &-techs {
@@ -184,7 +179,6 @@
             &-links {
                 flex-direction: column;
                 align-items: center;
-                gap: 1rem;
             }
         }
 

@@ -22,6 +22,7 @@
 
         & p {
             @include paragraph;
+
             color: var(--color-text-muted);
         }
 
@@ -37,6 +38,7 @@
         padding: 3rem;
         padding-bottom: 0rem;
         @include paragraph;
+        line-height: 1.625;
         color: var(--color-text-muted);
     }
 
@@ -44,7 +46,7 @@
         &__container {
             flex-direction: column;
             gap: 3rem;
-            padding: 2rem 10%;
+            padding: 8rem 5%;
         }
 
         &-title {
